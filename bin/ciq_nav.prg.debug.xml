@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\smiea\eclipse-workspace\ciq_nav\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="3" lineNum="6" pc="268435456" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="3" lineNum="7" pc="268435460" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="4" lineNum="10" pc="268435479" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="4" lineNum="11" pc="268435483" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="4" lineNum="12" pc="268435494" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="4" lineNum="13" pc="268435518" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navMenuDelegate.mc" id="4" lineNum="14" pc="268435529" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="23" pc="268435554" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="24" pc="268435558" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="25" pc="268435584" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="26" pc="268435624" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="27" pc="268435656" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="28" pc="268435686" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="42" pc="268436095" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="44" pc="268436134" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="46" pc="268436149" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="47" pc="268436189" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="48" pc="268436221" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="49" pc="268436251" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="6" lineNum="53" pc="268436369" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="58" pc="268436412" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="59" pc="268436416" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="60" pc="268436435" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="61" pc="268436468" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="62" pc="268436508" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="63" pc="268436528" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="64" pc="268436528" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="65" pc="268436538" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="66" pc="268436549" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="67" pc="268436572" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="68" pc="268436603" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="69" pc="268436626" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="70" pc="268436636" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="72" pc="268436649" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="73" pc="268436672" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="74" pc="268436688" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="75" pc="268436701" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="76" pc="268436721" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="77" pc="268436732" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="78" pc="268436758" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="79" pc="268436793" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="80" pc="268436812" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="83" pc="268436843" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="84" pc="268436853" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="86" pc="268436863" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="87" pc="268436904" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="119" pc="268437127" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="120" pc="268437170" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="89" pc="268437176" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="90" pc="268437219" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="92" pc="268437222" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="93" pc="268437265" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="95" pc="268437268" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="96" pc="268437311" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="98" pc="268437314" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="99" pc="268437357" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="101" pc="268437360" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="102" pc="268437403" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="104" pc="268437406" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="105" pc="268437449" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="107" pc="268437452" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="108" pc="268437495" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="110" pc="268437498" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="111" pc="268437541" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="113" pc="268437544" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="114" pc="268437587" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="116" pc="268437590" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="117" pc="268437633" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="122" pc="268437639" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="123" pc="268437670" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="124" pc="268437720" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="7" lineNum="127" pc="268437746" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="8" lineNum="131" pc="268437788" symbol="startNavigate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="8" lineNum="132" pc="268437792" symbol="startNavigate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="9" lineNum="135" pc="268437837" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="9" lineNum="136" pc="268437841" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="9" lineNum="137" pc="268437873" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="9" lineNum="138" pc="268437885" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="10" lineNum="142" pc="268437904" symbol="onLayout"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="11" lineNum="148" pc="268437909" symbol="onShow"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="11" lineNum="149" pc="268437913" symbol="onShow"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="153" pc="268437930" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="154" pc="268437934" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="155" pc="268437970" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="156" pc="268437982" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="157" pc="268437995" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="159" pc="268438040" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="160" pc="268438099" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="12" lineNum="161" pc="268438179" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="13" lineNum="168" pc="268438260" symbol="onHide"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="171" pc="268438265" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="172" pc="268438269" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="173" pc="268438282" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="174" pc="268438295" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="175" pc="268438308" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="176" pc="268438321" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="177" pc="268438340" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="178" pc="268438466" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="179" pc="268438485" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="180" pc="268438500" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="181" pc="268438516" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="14" lineNum="182" pc="268438532" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="15" lineNum="185" pc="268438536" symbol="deg2rad"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="15" lineNum="186" pc="268438540" symbol="deg2rad"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="16" lineNum="189" pc="268438563" symbol="rad2deg"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="16" lineNum="190" pc="268438567" symbol="rad2deg"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="18" lineNum="194" pc="268438590" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="18" lineNum="195" pc="268438594" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="19" lineNum="197" pc="268438613" symbol="onComplete"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navView.mc" id="20" lineNum="198" pc="268438618" symbol="onError"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navDelegate.mc" id="22" lineNum="5" pc="268438623" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navDelegate.mc" id="22" lineNum="6" pc="268438627" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navDelegate.mc" id="23" lineNum="9" pc="268438646" symbol="onMenu"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navApp.mc" id="25" lineNum="6" pc="268438651" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navApp.mc" id="25" lineNum="7" pc="268438655" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navApp.mc" id="26" lineNum="11" pc="268438674" symbol="onStart"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navApp.mc" id="27" lineNum="15" pc="268438679" symbol="onStop"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navApp.mc" id="28" lineNum="19" pc="268438684" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\ciq_navApp.mc" id="28" lineNum="20" pc="268438688" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="12" pc="268438756" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="13" pc="268438760" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="14" pc="268438770" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="15" pc="268438780" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="16" pc="268438790" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="17" pc="268438800" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="18" pc="268438810" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="19" pc="268438820" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\ciq_nav\\source\\models\\routeStep.mc" id="30" lineNum="20" pc="268438830" symbol="initialize"/>
+        <entry filename="Rez" id="34" lineNum="21" pc="268438841" symbol="initialize"/>
+        <entry filename="Rez" id="34" lineNum="22" pc="268438845" symbol="initialize"/>
+        <entry filename="Rez" id="35" lineNum="25" pc="268438870" symbol="draw"/>
+        <entry filename="Rez" id="35" lineNum="27" pc="268438874" symbol="draw"/>
+        <entry filename="Rez" id="35" lineNum="28" pc="268438910" symbol="draw"/>
+        <entry filename="Rez" id="41" lineNum="49" pc="268438943" symbol="initialize"/>
+        <entry filename="Rez" id="41" lineNum="50" pc="268438947" symbol="initialize"/>
+        <entry filename="Rez" id="41" lineNum="51" pc="268438965" symbol="initialize"/>
+        <entry filename="Rez" id="41" lineNum="52" pc="268439021" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="13" object="true" symbol="RouteStep"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="18" symbol="endPoint"/>
+        <entry field="true" id="44" symbol="sharpLeft"/>
+        <entry field="true" id="48" symbol="depart"/>
+        <entry id="30" method="true" symbol="onPosition"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="25" symbol="lastKnownPosition"/>
+        <entry field="true" id="55" symbol="AppName"/>
+        <entry id="33" method="true" symbol="deg2rad"/>
+        <entry field="true" id="53" symbol="myDir"/>
+        <entry field="true" id="41" symbol="sharpRight"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="46" symbol="uTurn"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="36" symbol="globals/ciq_navView"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="54" symbol="prompt"/>
+        <entry field="true" id="28" symbol="totalDistance"/>
+        <entry id="12" object="true" symbol="ciq_navApp"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8388764" method="true" symbol="format"/>
+        <entry id="29" method="true" symbol="messageReceived"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389314" symbol="latitude"/>
+        <entry id="57" symbol="item_2"/>
+        <entry id="56" symbol="item_1"/>
+        <entry id="38" module="true" symbol="Menus"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="24" symbol="currStep"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="23" symbol="instruction"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="8389892" object="true" symbol="background"/>
+        <entry field="true" id="8388911" symbol="distance"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="11" object="true" symbol="ciq_navDelegate"/>
+        <entry id="35" object="true" symbol="MyConnectionListener"/>
+        <entry field="true" id="17" symbol="startPoint"/>
+        <entry id="8388828" method="true" symbol="onError"/>
+        <entry id="50" object="true" symbol="MainMenu"/>
+        <entry field="true" id="14" symbol="hasPassed"/>
+        <entry id="9" object="true" symbol="ciq_navMenuDelegate"/>
+        <entry field="true" id="47" symbol="goal"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389315" symbol="longitude"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="32" method="true" symbol="distanceBetweenTwoPoints"/>
+        <entry field="true" id="40" symbol="slightRight"/>
+        <entry id="31" method="true" symbol="startNavigate"/>
+        <entry field="true" id="22" symbol="routePointsList"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="21" symbol="routeStepList"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="39" symbol="right"/>
+        <entry field="true" id="49" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="43" symbol="slightLeft"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="10" object="true" symbol="ciq_navView"/>
+        <entry field="true" id="26" symbol="isFirst"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="20" symbol="finishWayPoint"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry field="true" id="45" symbol="straight"/>
+        <entry id="34" method="true" symbol="rad2deg"/>
+        <entry id="8388829" method="true" symbol="onComplete"/>
+        <entry id="37" module="true" symbol="Layouts"/>
+        <entry id="8389317" symbol="degrees"/>
+        <entry field="true" id="16" symbol="instructionType"/>
+        <entry field="true" id="42" symbol="left"/>
+        <entry field="true" id="15" symbol="stepInstruction"/>
+        <entry id="8388642" module="true" symbol="Position"/>
+        <entry field="true" id="19" symbol="startWayPoint"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="27" symbol="directionImage"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="52" symbol="menu_label_2"/>
+        <entry field="true" id="51" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435554" name="item" stackId="1" startPc="268435479"/>
+        <entry endPc="268436134" name="i" stackId="2" startPc="268435686"/>
+        <entry endPc="268436408" name="i" stackId="3" startPc="268436251"/>
+        <entry arg="true" endPc="268436412" name="message" stackId="1" startPc="268435554"/>
+        <entry endPc="268436863" name="currDistance" stackId="7" startPc="268436649"/>
+        <entry endPc="268436863" name="traveledDistance" stackId="6" startPc="268436649"/>
+        <entry endPc="268437736" name="currPosition" stackId="5" startPc="268436528"/>
+        <entry endPc="268437787" name="now" stackId="2" startPc="268436416"/>
+        <entry endPc="268437787" name="time" stackId="3" startPc="268436416"/>
+        <entry endPc="268437787" name="str" stackId="4" startPc="268436416"/>
+        <entry arg="true" endPc="268437788" name="posInfo" stackId="1" startPc="268436412"/>
+        <entry arg="true" endPc="268437909" name="dc" stackId="1" startPc="268437904"/>
+        <entry arg="true" endPc="268438260" name="dc" stackId="1" startPc="268437930"/>
+        <entry endPc="268438535" name="endInDegs" stackId="6" startPc="268438269"/>
+        <entry endPc="268438535" name="endInRads" stackId="4" startPc="268438269"/>
+        <entry endPc="268438535" name="theta" stackId="7" startPc="268438269"/>
+        <entry endPc="268438535" name="startInDegs" stackId="5" startPc="268438269"/>
+        <entry endPc="268438535" name="startInRads" stackId="3" startPc="268438269"/>
+        <entry endPc="268438535" name="dist" stackId="8" startPc="268438269"/>
+        <entry arg="true" endPc="268438536" name="endPoint" stackId="2" startPc="268438265"/>
+        <entry arg="true" endPc="268438536" name="startPoint" stackId="1" startPc="268438265"/>
+        <entry arg="true" endPc="268438563" name="deg" stackId="1" startPc="268438536"/>
+        <entry arg="true" endPc="268438590" name="rad" stackId="1" startPc="268438563"/>
+        <entry arg="true" endPc="268438679" name="state" stackId="1" startPc="268438674"/>
+        <entry arg="true" endPc="268438684" name="state" stackId="1" startPc="268438679"/>
+        <entry arg="true" endPc="268438841" name="end" stackId="5" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="ins" stackId="2" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="fWayPoint" stackId="7" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="type" stackId="3" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="sWayPoint" stackId="6" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="dist" stackId="8" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="start" stackId="4" startPc="268438756"/>
+        <entry arg="true" endPc="268438841" name="passed" stackId="1" startPc="268438756"/>
+        <entry arg="true" endPc="268438943" name="dc" stackId="1" startPc="268438870"/>
+    </localVars>
+    <annotations/>
+    <dataEntryOffsetMappings>
+        <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry offset="174" parentId="globals" symbolId="RouteStep" type="class"/>
+        <dataEntry offset="285" parentId="globals" symbolId="ciq_navView" type="class"/>
+        <dataEntry offset="500" parentId="ciq_navView" symbolId="MyConnectionListener" type="class"/>
+        <dataEntry offset="563" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="642" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="769" parentId="Drawables" symbolId="background" type="class"/>
+        <dataEntry offset="824" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="863" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry offset="910" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="941" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="972" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="1003" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="1074" parentId="globals" symbolId="ciq_navMenuDelegate" type="class"/>
+        <dataEntry offset="1129" parentId="globals" symbolId="ciq_navDelegate" type="class"/>
+        <dataEntry offset="1184" parentId="globals" symbolId="ciq_navApp" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="initialize" parent="ciq_navMenuDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenuItem" parent="ciq_navMenuDelegate">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="messageReceived" parent="ciq_navView">
+            <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPosition" parent="ciq_navView">
+            <param id="posInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="startNavigate" parent="ciq_navView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ciq_navView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="ciq_navView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="ciq_navView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="ciq_navView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="ciq_navView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="distanceBetweenTwoPoints" parent="ciq_navView">
+            <param id="startPoint"/>
+            <param id="endPoint"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="deg2rad" parent="ciq_navView">
+            <param id="deg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="rad2deg" parent="ciq_navView">
+            <param id="rad"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MyConnectionListener">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onComplete" parent="MyConnectionListener">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onError" parent="MyConnectionListener">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ciq_navDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenu" parent="ciq_navDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="ciq_navApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="ciq_navApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="ciq_navApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="ciq_navApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="RouteStep">
+            <param id="passed"/>
+            <param id="ins"/>
+            <param id="type"/>
+            <param id="start"/>
+            <param id="end"/>
+            <param id="sWayPoint"/>
+            <param id="fWayPoint"/>
+            <param id="dist"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="background">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="draw" parent="background">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MainMenu">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

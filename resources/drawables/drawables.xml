@@ -1,0 +1,18 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png"/>
+    
+    <bitmap id="right" filename="./directions/direction_continue_right.png"/>
+    <bitmap id="slightRight" filename="./directions/direction_continue_slight_right.png"/>
+    <bitmap id="sharpRight" filename="./directions/direction_new_name_sharp_right.png"/>
+    <bitmap id="left" filename="./directions/direction_continue_left.png"/>
+    <bitmap id="slightLeft" filename="./directions/direction_continue_slight_left.png"/>
+    <bitmap id="sharpLeft" filename="./directions/direction_new_name_sharp_left.png"/>
+    <bitmap id="straight" filename="./directions/direction_continue_straight.png"/>
+    <bitmap id="uTurn" filename="./directions/direction_continue_uturn.png"/>
+    <bitmap id="goal" filename="./directions/direction_flag.png"/>
+    <bitmap id="depart" filename="./directions/direction_continue.png"/>
+    
+    <drawable-list id="background">
+	<shape type="rectangle" x="0" y="0" width="fill" height="fill" color="Graphics.COLOR_WHITE" />
+	</drawable-list>¨
+</drawables>

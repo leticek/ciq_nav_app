@@ -1,0 +1,7 @@
+<strings>
+    <string id="AppName">ciq_nav</string>
+    <string id="prompt">Click the menu button</string>
+    <string id="menu_label_1">Item 1</string>
+    <string id="menu_label_2">Item 2</string>
+    <string id="myDir">../drawables/directions/direction_flag.png</string>
+</strings>
