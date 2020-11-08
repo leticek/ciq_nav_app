@@ -152,14 +152,6 @@ class MainView extends WatchUi.View {
   function rad2deg(rad){ 
   	return (rad * 180.0 / Math.PI);
   }
-  
-  class MyConnectionListener extends Communications.ConnectionListener{
-  	function initialize(){
-  		ConnectionListener.initialize();
-  	}
-	function onComplete(){}
-	function onError(){}
-}
 
 }
 

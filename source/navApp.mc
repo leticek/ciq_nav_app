@@ -8,7 +8,8 @@ class NavApp extends Application.AppBase {
     hidden var routeSteps;
     hidden var wayPoints;
     hidden var boundingBox;
-    hidden var LatLongToPixels;
+    hidden var latLongToPixels;
+    hidden var routeView;
 
     function initialize() {
         Communications.registerForPhoneAppMessages(method(:messageReceived));
@@ -25,8 +26,7 @@ class NavApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        var rrouteView =  new RouteView();
-        return [ rrouteView, new navDelegate() ];
+        return [ routeView, new navDelegate() ];
     }
 
     function messageReceived(message){
@@ -48,6 +48,7 @@ class NavApp extends Application.AppBase {
         										 message.data["data"][i]["finishWayPoint"],
         										 message.data["data"][i]["distance"]);
 			}
+			System.println("routeSteps ok");
 			//startNavigate();
 		}
 		if(message.data["type"].toString().equals("routePoints")){
@@ -58,9 +59,11 @@ class NavApp extends Application.AppBase {
         										 :longitude => message.data["data"][i]["longitude"],
         										 :format => :degrees});
 			}
+			System.println("waypoints ok");
 		}
         if(message.data["type"].toString().equals("boundingBox")){
             System.print(message.data);
+            
 			boundingBox = new [2];
             boundingBox[0] = new Position.Location({
 												 :latitude => message.data["data"][1],
@@ -70,16 +73,24 @@ class NavApp extends Application.AppBase {
 												 :latitude => message.data["data"][3],
         										 :longitude => message.data["data"][2],
         										 :format => :degrees});
-            LatLongToPixels = new [wayPoints.size()];
+            latLongToPixels = new [wayPoints.size()];
+            System.println(boundingBox[0].toDegrees());
             for(var i = 0; i < wayPoints.size(); i++){
                 System.println("Pozice: " + i + " Lat: " + wayPoints[i][1] + " Lon: " + wayPoints[i][0]);
-                LatLongToPixels[i] = calculatePixel(wayPoints[i][1], wayPoints[i][0]);
-                System.println("Pozice: " + i + " X: " + LatLongToPixels[i][0] + " Y: " + LatLongToPixels[i][1]);
+                latLongToPixels[i] = calculatePixel(wayPoints[i][1], wayPoints[i][0]);
+                System.println("Pozice: " + i + " X: " + latLongToPixels[i][0] + " Y: " + latLongToPixels[i][1]);
             }
+            routeView = new RouteView(latLongToPixels);
+            routeView.onShow();
+            System.println("bb ok");
 		}
 	}
 
     function calculatePixel(inputLatitude, inputLongitude){
+        var leftLongitude = boundingBox[0].toDegrees()[1];
+        var eastLongitude = boundingBox[1].toDegrees()[1];
+        var northLatitude = boundingBox[0].toDegrees()[0];
+        var southLatitude = boundingBox[1].toDegrees()[0];
         var longitudeDiff = eastLongitude - leftLongitude;
         var latitudeDiff = northLatitude - southLatitude;
         var xPixel = (((eastLongitude - inputLongitude) / (longitudeDiff).toDouble()) * 170).toNumber();
@@ -89,5 +100,13 @@ class NavApp extends Application.AppBase {
         result[1] = yPixel; // y points south
         return result;
     }
+
+      class MyConnectionListener extends Communications.ConnectionListener{
+  	function initialize(){
+  		ConnectionListener.initialize();
+  	}
+	function onComplete(){}
+	function onError(){}
+}
 
 }
