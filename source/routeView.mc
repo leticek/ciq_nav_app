@@ -1,4 +1,5 @@
 using Toybox.Application;
+using Toybox.System;
 using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.Math;
@@ -7,53 +8,35 @@ using Toybox.Lang;
 class RouteView extends WatchUi.View {
 
     hidden var xyCoords;
+    /*hidden var leftLongitude; = 18.548841;
+    hidden var eastLongitude; = 18.560379;
+    hidden var northLatitude; = 49.899702;
+    hidden var southLatitude; = 49.892958;*/
 
-    function intialize(){
+    function intialize(lLongitude, eLongitude, nLatitude, sLatitude){
+        leftLongitude = lLongitude;
+        eastLongitude = eLongitude;
+        northLatitude = nLatitude;
+        southLatitude = sLatitude;
         View.initialize();
     }
 
     function onLayout(dc){
 
     } 
-
-    function calculatePixel(K, J){
-        var X = 18.548841;
-        var Y = 18.560379;
-        var A = 49.899702;
-        var B = 49.892958;
-        var Z = Y - X;
-        var C = A - B;
-
-        var xPixel = (((Y - J) / (Z).toDouble()) * 170).toNumber();
-        var yPixel = (((A - K) / (C).toDouble()) * 170).toNumber();
-
-        var result = new [2];
-        result[0] = xPixel;
-        result[1] = yPixel; // y points south
-        return result;
-
-    }
-
-
     
     function onShow(){
-        System.println("");
-        xyCoords = new [points.size()];
-        for(var i = 0; i < points.size(); i++){
-            System.println("Pozice: " + i + " Lat: " + points[i][1] + " Lon: " + points[i][0]);
-            xyCoords[i] = calculatePixel(points[i][1], points[i][0]);
-            System.println("Pozice: " + i + " X: " + xyCoords[i][0] + " Y: " + xyCoords[i][1]);
-        }
-        WatchUi.requestUpdate();
     }
     
     function onUpdate(dc){
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
+        //dc.fillRectangle(0, 0, 50, 50);
         for(var i = 0; i < xyCoords.size(); i++){
             //dc.drawPoint(xyCoords[i][0], xyCoords[i][1]);
-            dc.fillRoundedRectangle(xyCoords[i][1], xyCoords[i][0], 2, 2, 0.5);
-
+            dc.fillRoundedRectangle(xyCoords[i][1] + 25, xyCoords[i][0] + 10, 1, 1, 0.5);
+            if(i != xyCoords.size() - 1){dc.drawLine(xyCoords[i][1] + 25, xyCoords[i][0] + 10, xyCoords[i + 1][1] + 25, xyCoords[i + 1][0] + 10);
+            }
         }
         //dc.drawText(dc.getWidth() / 2, 120, 9, "instruction" , Graphics.TEXT_JUSTIFY_CENTER);
     }

@@ -19,42 +19,6 @@ class MainView extends WatchUi.View {
 	hidden var directionImage = null;
 	hidden var totalDistance = 0;
 	
-
-	function messageReceived(message){
-		System.println(message.data);
-		if(message.data["type"].toString().equals("routeSteps")){
-			routeStepList = new [message.data["data"].size()];
-			for(var i = 0; i < routeStepList.size(); i++){
-				routeStepList[i] = new RouteStep(message.data["data"][i]["passed"],
-												 message.data["data"][i]["instruction"],
-												 message.data["data"][i]["type"],
-												 new Position.Location({
-												 :latitude => message.data["data"][i]["startPoint"]["latitude"],
-        										 :longitude => message.data["data"][i]["startPoint"]["longitude"],
-        										 :format => :degrees}),
-												 new Position.Location({
-												 :latitude => message.data["data"][i]["endPoint"]["latitude"],
-        										 :longitude => message.data["data"][i]["endPoint"]["longitude"],
-        										 :format => :degrees}), 
-        										 message.data["data"][i]["startWayPoint"],
-        										 message.data["data"][i]["finishWayPoint"],
-        										 message.data["data"][i]["distance"]);
-        		System.println("Step c." + i);
-			}
-			startNavigate();
-		}
-		if(message.data["type"].toString().equals("routePoints")){
-			routePointsList = new [message.data["data"].size()];
-			for(var i = 0; i < routePointsList.size(); i++){
-				routePointsList[i] = new Position.Location({
-												 :latitude => message.data["data"][i]["latitude"],
-        										 :longitude => message.data["data"][i]["longitude"],
-        										 :format => :degrees});
-			System.println("Point c." + i);
-			}
-		}
-	}
-	
 	function onPosition(posInfo){
 		var now = Time.now();
 		var time = Calendar.info(now, Time.FORMAT_SHORT);
@@ -133,7 +97,6 @@ class MainView extends WatchUi.View {
 	}
 
     function initialize() {
-    	Communications.registerForPhoneAppMessages(method(:messageReceived));
     	startNavigate();
         View.initialize();
     }
