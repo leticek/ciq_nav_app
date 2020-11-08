@@ -1,6 +1,6 @@
 using Toybox.WatchUi;
 
-class ciq_navDelegate extends WatchUi.BehaviorDelegate {
+class navDelegate extends WatchUi.BehaviorDelegate {
 
     function initialize() {
         BehaviorDelegate.initialize();

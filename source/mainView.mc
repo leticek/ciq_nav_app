@@ -7,7 +7,7 @@ using Toybox.Lang;
 using Toybox.Time.Gregorian as Calendar;
 
 
-class ciq_navView extends WatchUi.View {
+class MainView extends WatchUi.View {
 
 	hidden var routeStepList;
 	hidden var routePointsList;

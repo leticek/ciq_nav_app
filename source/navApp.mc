@@ -1,9 +1,14 @@
 using Toybox.Application;
 using Toybox.WatchUi;
 
-class ciq_navApp extends Application.AppBase {
+class NavApp extends Application.AppBase {
+
+    hidden var mainView;
+    hidden var routeView;
 
     function initialize() {
+        mainView = new MainView();
+        routeView =  new RouteView();
         AppBase.initialize();
     }
 
@@ -17,7 +22,10 @@ class ciq_navApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [ new ciq_navView(), new ciq_navDelegate() ];
+        var mmainView = new MainView();
+        var rrouteView =  new RouteView();
+
+        return [ rrouteView, new navDelegate() ];
     }
 
 }
