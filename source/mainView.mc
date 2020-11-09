@@ -84,7 +84,7 @@ class MainView extends WatchUi.View {
 				break;
 		}
 		instruction = routeStepList[currStep].stepInstruction;
-		Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
+		//Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
 		WatchUi.requestUpdate();
 		}
 		catch(ex){
