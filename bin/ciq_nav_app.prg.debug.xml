@@ -96,193 +96,182 @@
         <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="13" lineNum="149" pc="268437637" symbol="deg2rad"/>
         <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="14" lineNum="152" pc="268437660" symbol="rad2deg"/>
         <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="14" lineNum="153" pc="268437664" symbol="rad2deg"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="16" lineNum="157" pc="268437687" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="16" lineNum="158" pc="268437691" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="17" lineNum="160" pc="268437710" symbol="onComplete"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\mainView.mc" id="18" lineNum="161" pc="268437715" symbol="onError"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navDelegate.mc" id="20" lineNum="5" pc="268437720" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navDelegate.mc" id="20" lineNum="6" pc="268437724" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navDelegate.mc" id="21" lineNum="9" pc="268437743" symbol="onMenu"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="23" lineNum="12" pc="268437748" symbol="intialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="23" lineNum="13" pc="268437752" symbol="intialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="23" lineNum="14" pc="268437769" symbol="intialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="23" lineNum="15" pc="268437793" symbol="intialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="24" lineNum="18" pc="268437812" symbol="onLayout"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="22" pc="268437817" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="23" pc="268437821" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="24" pc="268437828" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="25" pc="268437835" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="26" pc="268437842" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="27" pc="268437849" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="28" pc="268437856" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="29" pc="268437863" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="30" pc="268437897" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="31" pc="268437931" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="32" pc="268437939" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="33" pc="268437949" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="25" lineNum="34" pc="268437959" symbol="calculatePixel"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="39" pc="268437963" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="40" pc="268437967" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="41" pc="268437988" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="42" pc="268438014" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="43" pc="268438044" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="44" pc="268438116" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="45" pc="268438172" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="26" lineNum="47" pc="268438257" symbol="onShow"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="50" pc="268438274" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="51" pc="268438278" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="52" pc="268438314" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="54" pc="268438326" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="56" pc="268438356" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="57" pc="268438429" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="27" lineNum="57" pc="268438458" symbol="onUpdate"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="28" lineNum="63" pc="268438591" symbol="onHide"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="28" lineNum="67" pc="268442621" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="12" pc="268438599" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="13" pc="268438603" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="14" pc="268438635" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="31" lineNum="18" pc="268438654" symbol="onStart"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="32" lineNum="22" pc="268438659" symbol="onStop"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="33" lineNum="26" pc="268438664" symbol="getInitialView"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="33" lineNum="28" pc="268438668" symbol="getInitialView"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="33" lineNum="29" pc="268438692" symbol="getInitialView"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="32" pc="268438740" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="33" pc="268438744" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="34" pc="268438784" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="35" pc="268438816" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="36" pc="268438846" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="53" pc="268439271" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="54" pc="268439311" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="55" pc="268439343" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="56" pc="268439373" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="62" pc="268439507" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="63" pc="268439547" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="64" pc="268439573" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="65" pc="268439587" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="69" pc="268439702" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="73" pc="268439817" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="74" pc="268439852" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="75" pc="268439890" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="76" pc="268439928" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="77" pc="268439966" symbol="messageReceived"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="36" lineNum="6" pc="268440008" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="36" lineNum="7" pc="268440012" symbol="initialize"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="10" pc="268440031" symbol="onMenuItem"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="11" pc="268440035" symbol="onMenuItem"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="12" pc="268440046" symbol="onMenuItem"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="13" pc="268440070" symbol="onMenuItem"/>
-        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="14" pc="268440081" symbol="onMenuItem"/>
-        <entry filename="Rez" id="41" lineNum="21" pc="268440106" symbol="initialize"/>
-        <entry filename="Rez" id="41" lineNum="22" pc="268440110" symbol="initialize"/>
-        <entry filename="Rez" id="42" lineNum="25" pc="268440135" symbol="draw"/>
-        <entry filename="Rez" id="42" lineNum="27" pc="268440139" symbol="draw"/>
-        <entry filename="Rez" id="42" lineNum="28" pc="268440175" symbol="draw"/>
-        <entry filename="Rez" id="48" lineNum="49" pc="268440208" symbol="initialize"/>
-        <entry filename="Rez" id="48" lineNum="50" pc="268440212" symbol="initialize"/>
-        <entry filename="Rez" id="48" lineNum="51" pc="268440230" symbol="initialize"/>
-        <entry filename="Rez" id="48" lineNum="52" pc="268440286" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navDelegate.mc" id="16" lineNum="5" pc="268437687" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navDelegate.mc" id="16" lineNum="6" pc="268437691" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navDelegate.mc" id="17" lineNum="9" pc="268437710" symbol="onMenu"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="19" lineNum="16" pc="268437715" symbol="intialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="19" lineNum="17" pc="268437719" symbol="intialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="20" lineNum="20" pc="268437738" symbol="onLayout"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="21" lineNum="24" pc="268437743" symbol="onShow"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="22" lineNum="27" pc="268437748" symbol="onUpdate"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="22" lineNum="28" pc="268437752" symbol="onUpdate"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="22" lineNum="29" pc="268437788" symbol="onUpdate"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="23" lineNum="40" pc="268437801" symbol="onHide"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\routeView.mc" id="23" lineNum="44" pc="268442153" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="25" lineNum="13" pc="268437809" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="25" lineNum="14" pc="268437813" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="25" lineNum="15" pc="268437845" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="26" lineNum="19" pc="268437864" symbol="onStart"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="27" lineNum="23" pc="268437869" symbol="onStop"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="28" lineNum="27" pc="268437874" symbol="getInitialView"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="28" lineNum="28" pc="268437878" symbol="getInitialView"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="28" lineNum="29" pc="268437902" symbol="getInitialView"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="32" pc="268437950" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="33" pc="268437954" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="34" pc="268437994" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="35" pc="268438026" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="36" pc="268438056" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="53" pc="268438481" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="54" pc="268438521" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="55" pc="268438553" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="56" pc="268438583" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="62" pc="268438717" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="63" pc="268438757" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="64" pc="268438783" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="65" pc="268438797" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="69" pc="268438912" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="73" pc="268439027" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="74" pc="268439053" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="75" pc="268439091" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="76" pc="268439121" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="77" pc="268439195" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="29" lineNum="78" pc="268439251" symbol="messageReceived"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="83" pc="268439342" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="89" pc="268439346" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="90" pc="268439353" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="91" pc="268439360" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="92" pc="268439367" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="93" pc="268439374" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="94" pc="268439381" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="95" pc="268439388" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="96" pc="268439422" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="97" pc="268439456" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="98" pc="268439464" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="99" pc="268439474" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="30" lineNum="100" pc="268439484" symbol="calculatePixel"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="32" lineNum="104" pc="268439488" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="32" lineNum="105" pc="268439492" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="33" lineNum="107" pc="268439511" symbol="onComplete"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navApp.mc" id="34" lineNum="108" pc="268439516" symbol="onError"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="36" lineNum="6" pc="268439521" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="36" lineNum="7" pc="268439525" symbol="initialize"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="10" pc="268439544" symbol="onMenuItem"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="11" pc="268439548" symbol="onMenuItem"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="12" pc="268439559" symbol="onMenuItem"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="13" pc="268439583" symbol="onMenuItem"/>
+        <entry filename="D:\\VSB\\bakalarka\\ciq_nav_app\\source\\navMenuDelegate.mc" id="37" lineNum="14" pc="268439594" symbol="onMenuItem"/>
+        <entry filename="Rez" id="41" lineNum="21" pc="268439619" symbol="initialize"/>
+        <entry filename="Rez" id="41" lineNum="22" pc="268439623" symbol="initialize"/>
+        <entry filename="Rez" id="42" lineNum="25" pc="268439648" symbol="draw"/>
+        <entry filename="Rez" id="42" lineNum="27" pc="268439652" symbol="draw"/>
+        <entry filename="Rez" id="42" lineNum="28" pc="268439688" symbol="draw"/>
+        <entry filename="Rez" id="48" lineNum="49" pc="268439721" symbol="initialize"/>
+        <entry filename="Rez" id="48" lineNum="50" pc="268439725" symbol="initialize"/>
+        <entry filename="Rez" id="48" lineNum="51" pc="268439743" symbol="initialize"/>
+        <entry filename="Rez" id="48" lineNum="52" pc="268439799" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="9" object="true" symbol="RouteStep"/>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="23" symbol="endPoint"/>
-        <entry field="true" id="33" symbol="sharpLeft"/>
-        <entry field="true" id="37" symbol="depart"/>
+        <entry field="true" id="27" symbol="endPoint"/>
+        <entry field="true" id="37" symbol="sharpLeft"/>
+        <entry field="true" id="41" symbol="depart"/>
         <entry id="12" object="true" symbol="RouteView"/>
-        <entry id="57" method="true" symbol="onPosition"/>
+        <entry id="60" method="true" symbol="onPosition"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="53" symbol="lastKnownPosition"/>
-        <entry id="47" method="true" symbol="calculatePixel"/>
-        <entry field="true" id="44" symbol="AppName"/>
-        <entry id="60" method="true" symbol="deg2rad"/>
-        <entry field="true" id="42" symbol="myDir"/>
-        <entry field="true" id="48" symbol="points"/>
-        <entry field="true" id="30" symbol="sharpRight"/>
+        <entry field="true" id="56" symbol="lastKnownPosition"/>
+        <entry id="20" method="true" symbol="calculatePixel"/>
+        <entry field="true" id="48" symbol="AppName"/>
+        <entry id="63" method="true" symbol="deg2rad"/>
+        <entry field="true" id="46" symbol="myDir"/>
+        <entry field="true" id="51" symbol="points"/>
+        <entry field="true" id="34" symbol="sharpRight"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry field="true" id="35" symbol="uTurn"/>
+        <entry field="true" id="39" symbol="uTurn"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry field="true" id="17" symbol="boundingBox"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="43" symbol="prompt"/>
+        <entry field="true" id="47" symbol="prompt"/>
         <entry id="10" object="true" symbol="MainView"/>
         <entry id="13" object="true" symbol="NavApp"/>
-        <entry field="true" id="56" symbol="totalDistance"/>
+        <entry field="true" id="59" symbol="totalDistance"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8388764" method="true" symbol="format"/>
-        <entry id="18" method="true" symbol="messageReceived"/>
+        <entry id="19" method="true" symbol="messageReceived"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389314" symbol="latitude"/>
-        <entry id="65" symbol="item_2"/>
-        <entry id="64" symbol="item_1"/>
-        <entry id="27" module="true" symbol="Menus"/>
+        <entry id="66" symbol="item_2"/>
+        <entry id="65" symbol="item_1"/>
+        <entry id="31" module="true" symbol="Menus"/>
         <entry id="11" object="true" symbol="navDelegate"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
-        <entry field="true" id="52" symbol="currStep"/>
-        <entry field="true" id="45" symbol="xyCoords"/>
+        <entry field="true" id="55" symbol="currStep"/>
+        <entry field="true" id="49" symbol="xyCoords"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="63" symbol="globals/MainView"/>
         <entry id="14" object="true" symbol="navMenuDelegate"/>
-        <entry field="true" id="51" symbol="instruction"/>
+        <entry field="true" id="54" symbol="instruction"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry field="true" id="8389892" object="true" symbol="background"/>
         <entry field="true" id="8388911" symbol="distance"/>
         <entry id="8388637" module="true" symbol="Communications"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="62" object="true" symbol="MyConnectionListener"/>
-        <entry field="true" id="22" symbol="startPoint"/>
+        <entry id="21" object="true" symbol="MyConnectionListener"/>
+        <entry field="true" id="26" symbol="startPoint"/>
         <entry id="8388828" method="true" symbol="onError"/>
-        <entry id="39" object="true" symbol="MainMenu"/>
-        <entry field="true" id="19" symbol="hasPassed"/>
-        <entry field="true" id="36" symbol="goal"/>
+        <entry id="43" object="true" symbol="MainMenu"/>
+        <entry field="true" id="23" symbol="hasPassed"/>
+        <entry field="true" id="40" symbol="goal"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8389315" symbol="longitude"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="59" method="true" symbol="distanceBetweenTwoPoints"/>
-        <entry field="true" id="29" symbol="slightRight"/>
-        <entry id="58" method="true" symbol="startNavigate"/>
-        <entry field="true" id="50" symbol="routePointsList"/>
+        <entry id="62" method="true" symbol="distanceBetweenTwoPoints"/>
+        <entry field="true" id="33" symbol="slightRight"/>
+        <entry id="61" method="true" symbol="startNavigate"/>
+        <entry field="true" id="53" symbol="routePointsList"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="49" symbol="routeStepList"/>
+        <entry field="true" id="52" symbol="routeStepList"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry id="8389068" method="true" symbol="draw"/>
-        <entry field="true" id="28" symbol="right"/>
-        <entry field="true" id="38" symbol="LauncherIcon"/>
+        <entry field="true" id="32" symbol="right"/>
+        <entry field="true" id="18" symbol="LatLongToPixels"/>
+        <entry field="true" id="42" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="22" symbol="globals/NavApp"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="32" symbol="slightLeft"/>
+        <entry field="true" id="36" symbol="slightLeft"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry field="true" id="16" symbol="wayPoints"/>
-        <entry field="true" id="54" symbol="isFirst"/>
+        <entry field="true" id="57" symbol="isFirst"/>
         <entry id="8388641" module="true" symbol="Math"/>
-        <entry field="true" id="25" symbol="finishWayPoint"/>
+        <entry field="true" id="29" symbol="finishWayPoint"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry field="true" id="15" symbol="routeSteps"/>
-        <entry field="true" id="34" symbol="straight"/>
-        <entry id="61" method="true" symbol="rad2deg"/>
+        <entry field="true" id="38" symbol="straight"/>
+        <entry id="64" method="true" symbol="rad2deg"/>
         <entry id="8388829" method="true" symbol="onComplete"/>
-        <entry id="26" module="true" symbol="Layouts"/>
+        <entry id="30" module="true" symbol="Layouts"/>
         <entry id="8389317" symbol="degrees"/>
-        <entry field="true" id="21" symbol="instructionType"/>
-        <entry field="true" id="31" symbol="left"/>
-        <entry field="true" id="20" symbol="stepInstruction"/>
+        <entry field="true" id="25" symbol="instructionType"/>
+        <entry field="true" id="35" symbol="left"/>
+        <entry field="true" id="24" symbol="stepInstruction"/>
         <entry id="8388642" module="true" symbol="Position"/>
-        <entry field="true" id="24" symbol="startWayPoint"/>
-        <entry id="46" method="true" symbol="intialize"/>
+        <entry field="true" id="28" symbol="startWayPoint"/>
+        <entry id="50" method="true" symbol="intialize"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="55" symbol="directionImage"/>
+        <entry field="true" id="58" symbol="directionImage"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="41" symbol="menu_label_2"/>
-        <entry field="true" id="40" symbol="menu_label_1"/>
+        <entry field="true" id="45" symbol="menu_label_2"/>
+        <entry field="true" id="44" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435541" name="end" stackId="5" startPc="268435456"/>
@@ -312,50 +301,48 @@
         <entry arg="true" endPc="268437633" name="startPoint" stackId="1" startPc="268437362"/>
         <entry arg="true" endPc="268437660" name="deg" stackId="1" startPc="268437633"/>
         <entry arg="true" endPc="268437687" name="rad" stackId="1" startPc="268437660"/>
-        <entry endPc="268437811" name="info" stackId="1" startPc="268437752"/>
-        <entry arg="true" endPc="268437817" name="dc" stackId="1" startPc="268437812"/>
-        <entry endPc="268437962" name="C" stackId="8" startPc="268437821"/>
-        <entry endPc="268437962" name="Z" stackId="7" startPc="268437821"/>
-        <entry endPc="268437962" name="northLatitude" stackId="5" startPc="268437821"/>
-        <entry endPc="268437962" name="leftLongitude" stackId="3" startPc="268437821"/>
-        <entry endPc="268437962" name="eastLongitude" stackId="4" startPc="268437821"/>
-        <entry endPc="268437962" name="southLatitude" stackId="6" startPc="268437821"/>
-        <entry endPc="268437962" name="xPixel" stackId="9" startPc="268437821"/>
-        <entry endPc="268437962" name="result" stackId="11" startPc="268437821"/>
-        <entry endPc="268437962" name="yPixel" stackId="10" startPc="268437821"/>
-        <entry arg="true" endPc="268437963" name="K" stackId="1" startPc="268437817"/>
-        <entry arg="true" endPc="268437963" name="J" stackId="2" startPc="268437817"/>
-        <entry endPc="268438257" name="i" stackId="1" startPc="268438044"/>
-        <entry endPc="268438590" name="i" stackId="2" startPc="268438356"/>
-        <entry arg="true" endPc="268438591" name="dc" stackId="1" startPc="268438274"/>
-        <entry arg="true" endPc="268438659" name="state" stackId="1" startPc="268438654"/>
-        <entry arg="true" endPc="268438664" name="state" stackId="1" startPc="268438659"/>
-        <entry endPc="268438739" name="rrouteView" stackId="1" startPc="268438668"/>
-        <entry endPc="268439268" name="i" stackId="2" startPc="268438846"/>
-        <entry endPc="268439504" name="i" stackId="3" startPc="268439373"/>
-        <entry arg="true" endPc="268440008" name="message" stackId="1" startPc="268438740"/>
-        <entry arg="true" endPc="268440106" name="item" stackId="1" startPc="268440031"/>
-        <entry arg="true" endPc="268440208" name="dc" stackId="1" startPc="268440135"/>
+        <entry arg="true" endPc="268437743" name="dc" stackId="1" startPc="268437738"/>
+        <entry arg="true" endPc="268437801" name="dc" stackId="1" startPc="268437748"/>
+        <entry arg="true" endPc="268437869" name="state" stackId="1" startPc="268437864"/>
+        <entry arg="true" endPc="268437874" name="state" stackId="1" startPc="268437869"/>
+        <entry endPc="268437949" name="rrouteView" stackId="1" startPc="268437878"/>
+        <entry endPc="268438478" name="i" stackId="2" startPc="268438056"/>
+        <entry endPc="268438714" name="i" stackId="3" startPc="268438583"/>
+        <entry endPc="268439338" name="i" stackId="4" startPc="268439121"/>
+        <entry arg="true" endPc="268439342" name="message" stackId="1" startPc="268437950"/>
+        <entry endPc="268439487" name="latitudeDiff" stackId="8" startPc="268439346"/>
+        <entry endPc="268439487" name="northLatitude" stackId="5" startPc="268439346"/>
+        <entry endPc="268439487" name="leftLongitude" stackId="3" startPc="268439346"/>
+        <entry endPc="268439487" name="eastLongitude" stackId="4" startPc="268439346"/>
+        <entry endPc="268439487" name="longitudeDiff" stackId="7" startPc="268439346"/>
+        <entry endPc="268439487" name="southLatitude" stackId="6" startPc="268439346"/>
+        <entry endPc="268439487" name="xPixel" stackId="9" startPc="268439346"/>
+        <entry endPc="268439487" name="result" stackId="11" startPc="268439346"/>
+        <entry endPc="268439487" name="yPixel" stackId="10" startPc="268439346"/>
+        <entry arg="true" endPc="268439488" name="inputLongitude" stackId="2" startPc="268439342"/>
+        <entry arg="true" endPc="268439488" name="inputLatitude" stackId="1" startPc="268439342"/>
+        <entry arg="true" endPc="268439619" name="item" stackId="1" startPc="268439544"/>
+        <entry arg="true" endPc="268439721" name="dc" stackId="1" startPc="268439648"/>
     </localVars>
     <annotations/>
     <dataEntryOffsetMappings>
         <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
         <dataEntry offset="182" parentId="globals" symbolId="NavApp" type="class"/>
-        <dataEntry offset="285" parentId="globals" symbolId="RouteStep" type="class"/>
-        <dataEntry offset="396" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry offset="475" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry offset="602" parentId="Drawables" symbolId="background" type="class"/>
-        <dataEntry offset="657" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry offset="696" parentId="Menus" symbolId="MainMenu" type="class"/>
-        <dataEntry offset="743" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry offset="774" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry offset="805" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry offset="836" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry offset="907" parentId="globals" symbolId="navDelegate" type="class"/>
-        <dataEntry offset="962" parentId="globals" symbolId="RouteView" type="class"/>
-        <dataEntry offset="1073" parentId="globals" symbolId="MainView" type="class"/>
-        <dataEntry offset="1280" parentId="MainView" symbolId="MyConnectionListener" type="class"/>
-        <dataEntry offset="1343" parentId="globals" symbolId="navMenuDelegate" type="class"/>
+        <dataEntry offset="317" parentId="NavApp" symbolId="MyConnectionListener" type="class"/>
+        <dataEntry offset="380" parentId="globals" symbolId="RouteStep" type="class"/>
+        <dataEntry offset="491" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="570" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="697" parentId="Drawables" symbolId="background" type="class"/>
+        <dataEntry offset="752" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="791" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry offset="838" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="869" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="900" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="931" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="1002" parentId="globals" symbolId="navDelegate" type="class"/>
+        <dataEntry offset="1057" parentId="globals" symbolId="RouteView" type="class"/>
+        <dataEntry offset="1160" parentId="globals" symbolId="MainView" type="class"/>
+        <dataEntry offset="1351" parentId="globals" symbolId="navMenuDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="initialize" parent="RouteStep">
@@ -406,15 +393,6 @@
             <param id="rad"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="initialize" parent="MyConnectionListener">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onComplete" parent="MyConnectionListener">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onError" parent="MyConnectionListener">
-            <documentation/>
-        </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="navDelegate">
             <documentation/>
         </functionEntry>
@@ -426,11 +404,6 @@
         </functionEntry>
         <functionEntry accessMode="public" name="onLayout" parent="RouteView">
             <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="calculatePixel" parent="RouteView">
-            <param id="K"/>
-            <param id="J"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onShow" parent="RouteView">
@@ -459,6 +432,20 @@
         </functionEntry>
         <functionEntry accessMode="public" name="messageReceived" parent="NavApp">
             <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="calculatePixel" parent="NavApp">
+            <param id="inputLatitude"/>
+            <param id="inputLongitude"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MyConnectionListener">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onComplete" parent="MyConnectionListener">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onError" parent="MyConnectionListener">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="initialize" parent="navMenuDelegate">

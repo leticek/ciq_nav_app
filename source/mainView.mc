@@ -84,7 +84,7 @@ class MainView extends WatchUi.View {
 				break;
 		}
 		instruction = routeStepList[currStep].stepInstruction;
-		Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
+		//Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
 		WatchUi.requestUpdate();
 		}
 		catch(ex){
@@ -109,6 +109,7 @@ class MainView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
+   		System.print("main");
 		WatchUi.requestUpdate();
     }
 
@@ -152,14 +153,6 @@ class MainView extends WatchUi.View {
   function rad2deg(rad){ 
   	return (rad * 180.0 / Math.PI);
   }
-  
-  class MyConnectionListener extends Communications.ConnectionListener{
-  	function initialize(){
-  		ConnectionListener.initialize();
-  	}
-	function onComplete(){}
-	function onError(){}
-}
 
 }
 
