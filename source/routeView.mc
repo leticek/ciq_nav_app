@@ -21,6 +21,10 @@ class RouteView extends WatchUi.View {
     } 
     
     function onShow(){
+<<<<<<< HEAD
+=======
+    	System.println("nechapu");
+>>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
         WatchUi.requestUpdate();
     }
     
@@ -38,7 +42,11 @@ class RouteView extends WatchUi.View {
             }
         }
         drawDial(dc);
+<<<<<<< HEAD
         dc.drawText(dc.getWidth() / 2, 120, 9, "route image" , Graphics.TEXT_JUSTIFY_CENTER);
+=======
+        //dc.drawText(dc.getWidth() / 2, 120, 9, "instruction" , Graphics.TEXT_JUSTIFY_CENTER);
+>>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
     }
     
         hidden function drawDial(dc) {

@@ -11,7 +11,10 @@ class NavApp extends Application.AppBase {
     hidden var boundingBox;
     hidden var latLongToPixels;
     hidden var routeView;
+<<<<<<< HEAD
     hidden var mainView;
+=======
+>>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
 	hidden var deviceInfo;
 	
     function initialize() {
@@ -31,8 +34,12 @@ class NavApp extends Application.AppBase {
     // Return the initial view of your application here
     function getInitialView() {
         self.routeView = new RouteView();
+<<<<<<< HEAD
         self.mainView = new MainView();
         return [ self.mainView, new navDelegate() ];
+=======
+        return [ self.routeView, new navDelegate() ];
+>>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
     }
 
     function messageReceived(message){
@@ -55,7 +62,11 @@ class NavApp extends Application.AppBase {
         										 message.data["data"][i]["distance"]);
 			}
 			System.println("routeSteps ok");
+<<<<<<< HEAD
 			
+=======
+			//startNavigate();
+>>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
 		}
 		if(message.data["type"].toString().equals("routePoints")){
 			wayPoints = new [message.data["data"].size()];
