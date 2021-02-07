@@ -6,7 +6,7 @@ class RouteView extends WatchUi.View {
 
     hidden var coordinates;
     
-    function intialize(){
+    function initialize(){
         View.initialize();
     }
 
@@ -21,32 +21,27 @@ class RouteView extends WatchUi.View {
     } 
     
     function onShow(){
-<<<<<<< HEAD
-=======
-    	System.println("nechapu");
->>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
         WatchUi.requestUpdate();
     }
     
     function onUpdate(dc){
-    System.print("hmm");
+    	var height = dc.getHeight();
+    	
+    
+    	System.print("Vyska:" + height);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
-        if(coordinates instanceof Array){
+        if(coordinates instanceof Array && coordinates != null){
             for(var i = 0; i < coordinates.size(); i++){
             //dc.drawPoint(xyCoords[i][0], xyCoords[i][1]);
-                dc.fillRoundedRectangle(coordinates[i][1] + 20, coordinates[i][0] + 10, 1, 1, 0.5);
+                dc.fillRoundedRectangle(coordinates[i][1], coordinates[i][0], 1, 1, 0.5);
                 if(i != coordinates.size() - 1){
-                    dc.drawLine(coordinates[i][1] + 20, coordinates[i][0] + 10, coordinates[i + 1][1] + 20, coordinates[i + 1][0] + 10);
+                    dc.drawLine(coordinates[i][1], coordinates[i][0], coordinates[i + 1][1], coordinates[i + 1][0]);
                 }
             }
         }
         drawDial(dc);
-<<<<<<< HEAD
-        dc.drawText(dc.getWidth() / 2, 120, 9, "route image" , Graphics.TEXT_JUSTIFY_CENTER);
-=======
-        //dc.drawText(dc.getWidth() / 2, 120, 9, "instruction" , Graphics.TEXT_JUSTIFY_CENTER);
->>>>>>> 467900165ee1dcbb4ae9a7999b010a751fcc5dc1
+        //dc.drawText(dc.getWidth() / 2, 120, 9, "route image" , Graphics.TEXT_JUSTIFY_CENTER);
     }
     
         hidden function drawDial(dc) {
