@@ -19,6 +19,14 @@ class MainView extends WatchUi.View {
 	hidden var directionImage = null;
 	hidden var totalDistance = 0;
 	
+	function setRouteSteps(routeSteps){
+		self.routeStepList = routeSteps;
+	}
+	
+	function setRoutePoints(routePoints){
+		self.routePointsList = routePoints;
+	}
+	
 	function onPosition(posInfo){
 		var now = Time.now();
 		var time = Calendar.info(now, Time.FORMAT_SHORT);
@@ -85,7 +93,7 @@ class MainView extends WatchUi.View {
 					break;
 			}
 			instruction = routeStepList[currStep].stepInstruction;
-			//Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
+			Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
 			WatchUi.requestUpdate();
 		}
 		catch(ex){
@@ -98,8 +106,9 @@ class MainView extends WatchUi.View {
 	}
 
     function initialize() {
-    	startNavigate();
         View.initialize();
+    	startNavigate();
+        System.println("main init");
     }
 
     // Load your resources here
@@ -130,6 +139,7 @@ class MainView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
+    	System.println("main hide");
     }
     
     function distanceBetweenTwoPoints(startPoint, endPoint){
@@ -154,5 +164,13 @@ class MainView extends WatchUi.View {
   		return (rad * 180.0 / Math.PI);
   	}
 }
+
+
+class MyConnectionListener extends Communications.ConnectionListener{
+	function initialize(){
+	}
+
+}
+	
 
 
