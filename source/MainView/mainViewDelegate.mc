@@ -5,6 +5,10 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
 	hidden var currentScreen = 0;
 	hidden var routeView;
 	hidden var mainView;
+<<<<<<< HEAD
+=======
+	hidden var zoom = 1;
+>>>>>>> efb6c3b1a7a57504a9532caf5ce3b6b6c4f813b4
 	hidden var zoomMode = true;
 
     function initialize(mainView, routeView) {
@@ -46,6 +50,7 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
     		var xTapped = clickEvent.getCoordinates()[0];
     		var yTapped = clickEvent.getCoordinates()[1];
 	        if(xTapped >= 55 && xTapped <= 165 && yTapped <= 55){
+<<<<<<< HEAD
         		self.routeView.moveUp();
         	}
         	else if(xTapped >= 55 && xTapped <= 165 && yTapped >= 165){
@@ -61,6 +66,28 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
         		self.routeView.zoom(zoomMode);
         	}
         
+=======
+        		self.routeView.moveUp(zoom);
+        	}
+        	else if(xTapped >= 55 && xTapped <= 165 && yTapped >= 165){
+        		self.routeView.moveDown(zoom);
+        	}
+        	else if(xTapped <= 55 && yTapped >= 55  && yTapped <= 165){
+        		self.routeView.moveLeft(zoom);
+        	}
+        	else if(xTapped >= 165 && yTapped >= 55  && yTapped <= 165){
+	        	self.routeView.moveRight(zoom);
+        	}
+        	else{
+        		if(zoomMode){
+        			zoom += 0.2;        	
+        		}
+        		else{
+        			zoom -= 0.2;
+        		}
+        		self.routeView.zoom(zoom);
+        	}
+>>>>>>> efb6c3b1a7a57504a9532caf5ce3b6b6c4f813b4
        	}
         return true;
     }
@@ -72,9 +99,12 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
     	return true;
     }
     
+<<<<<<< HEAD
     function onMenu(swipeEvent){
     	
     }
     
+=======
+>>>>>>> efb6c3b1a7a57504a9532caf5ce3b6b6c4f813b4
     
 }
