@@ -6,6 +6,8 @@ class RouteView extends WatchUi.View {
 
     hidden var coordinates;
     hidden var zoomLevel = 1;
+    hidden var xOffset = 0;
+    hidden var yOffset = 0;
     hidden var userPosition;
     
     function initialize(){
@@ -20,6 +22,10 @@ class RouteView extends WatchUi.View {
     
     function setUserPosition(coords){
         self.userPosition = coords;
+        System.println("USER X: " + self.userPosition[1] + " Y: " + self.userPosition[0]);
+        self.userPosition[0] += xOffset;
+        self.userPosition[1] += yOffset;
+        System.println("USER X: " + self.userPosition[1] + " Y: " + self.userPosition[0]);
         self.requestUpdate();
     }
 
@@ -35,7 +41,6 @@ class RouteView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
          
-        System.println("Vyska: " + dc.getHeight() + " Sirka: " + dc.getWidth());
         
         dc.drawLine(55, 0,55, 218);
         dc.drawLine(165, 0,165, 218);
@@ -58,7 +63,7 @@ class RouteView extends WatchUi.View {
         
         dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_WHITE); 
         if(userPosition instanceof Array && userPosition != null){
-        	dc.fillRoundedRectangle(userPosition[1], userPosition[0], 3, 3, 2);
+        	dc.fillRoundedRectangle(userPosition[1], userPosition[0], 5, 5, 3);
         }
     }
     
@@ -68,30 +73,50 @@ class RouteView extends WatchUi.View {
     
     
     function moveUp(){
+        yOffset -= 3 * (zoomLevel * 1.8);
+        System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	for(var i = 0; i < coordinates.size(); i++){
     		coordinates[i][0] -= 3 * (zoomLevel * 1.8);
     	}
+        if(userPosition != null){
+            self.userPosition[0] -= yOffset;
+        }
     	self.requestUpdate();
     }
     
     function moveDown(){
+        yOffset += 3 * (zoomLevel * 1.8);
+        System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	for(var i = 0; i < coordinates.size(); i++){
     		coordinates[i][0] += 3 * (zoomLevel * 1.8);
     	}
+        if(userPosition != null){
+            self.userPosition[0] += yOffset;
+        }
     	self.requestUpdate();
     }
     
     function moveLeft(){
+        xOffset -= 3 * (zoomLevel * 1.8);
+        System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	for(var i = 0; i < coordinates.size(); i++){
     		coordinates[i][1] -= 3 * (zoomLevel * 1.8);
     	}
+        if(userPosition != null){
+            self.userPosition[1] -= xOffset;
+        }
     	self.requestUpdate();
     }
     
     function moveRight(){
+        xOffset += 3 * (zoomLevel * 1.8);
+        System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	for(var i = 0; i < coordinates.size(); i++){
     		coordinates[i][1] += 3 * (zoomLevel * 1.8);
     	}
+        if(userPosition != null){
+            self.userPosition[1] += xOffset;
+        }
     	self.requestUpdate();
     }
     
@@ -101,7 +126,6 @@ class RouteView extends WatchUi.View {
     			zoomLevel += 0.2;
     			Application.getApp().calculateZoom(zoomLevel);
     		}
-    	
     		else{
     			zoomLevel -= 0.2;
     			Application.getApp().calculateZoom(zoomLevel);
@@ -109,7 +133,4 @@ class RouteView extends WatchUi.View {
     	}
     	self.requestUpdate();
     }
-    
-    
-    
 }

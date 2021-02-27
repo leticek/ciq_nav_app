@@ -11,7 +11,8 @@ class NavApp extends Application.AppBase {
     hidden var mainView;
 	hidden var mainViewBehaviorDelegate;
 
-
+	hidden var userPosition;
+	hidden var ratioConvert = true; 
     
 	hidden var routeSteps;
     hidden var routePoints;
@@ -81,19 +82,27 @@ class NavApp extends Application.AppBase {
             bottomRight = new MyReferencePoint(191, 181, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
             topLeft.setGlobalXY(latlngToGlobalXY(topLeft.latitude, topLeft.longitude, topLeft, bottomRight));
             bottomRight.setGlobalXY(latlngToGlobalXY(bottomRight.latitude, bottomRight.longitude, topLeft, bottomRight));                       
-            
+			setConversionRatio(topLeft, bottomRight);
+			System.println("ratio: " + ratioConvert);
+
             parse(routePoints, topLeft, bottomRight, latLongToPixels, latLongToPixels.size());
             self.routeView.setCoords(latLongToPixels);
             System.println("converted");
 		}
 	}
-	
+
+	function setConversionRatio(topLeft, bottomRight){
+		if((topLeft.globalXY[0] - bottomRight.globalXY[0]) > (topLeft.globalXY[1] - bottomRight.globalXY[1])){
+				ratioConvert = true;
+		}
+		else{
+			ratioConvert = false;
+		}
+	}
 	
 	function parse(routePoints, topLeft, bottomRight, latLongToPixels, velikost){
 		for(var i = 0; i < velikost; i++){
-            //System.println("Pozice: " + i + " Lat: " + routePoints[i].toDegrees()[1] + " Lon: " + routePoints[i].toDegrees()[0]);
-            latLongToPixels[i] = latlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight);
-            //System.println("Pozice: " + i + " X: " + latLongToPixels[i][0] + " Y: " + latLongToPixels[i][1]);
+            latLongToPixels[i] = latlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight);   
 		}
 	}
 
@@ -139,35 +148,47 @@ class NavApp extends Application.AppBase {
     	var pos = new MyPoint(latlngToGlobalXY(lat, lng, p0, p1));
     	pos.percentageX = ((165) / (p1.globalXY[0] - p0.globalXY[0]));
     	pos.percentageY = ((145) / (p1.globalXY[1] - p0.globalXY[1]));
-    	return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageX),
-    			218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageX)];
+		if(ratioConvert){
+    		return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageX),
+    				218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageX)];
+		}
+		else{
+			return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageY),
+    			218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageY)];
+		}
 	}
 	
 	function zoomLatlngToScreenXY(lat, lng, p0, p1, zoom){
     	var pos = new MyPoint(latlngToGlobalXY(lat, lng, p0, p1));
     	pos.percentageX = ((165) / (p1.globalXY[0] - p0.globalXY[0]));
     	pos.percentageY = ((145) / (p1.globalXY[1] - p0.globalXY[1]));
-    	return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageX * zoom)),
-    			218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageX * zoom))];
+		if(ratioConvert){
+    		return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageX * zoom)),
+    				218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageX * zoom))];
+		}
+		else{
+			return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageY * zoom)),
+    				218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageY * zoom))];
+		}
 	}
 	
 	
 	function calculateZoom(zoom){
 		if(latLongToPixels != null && latLongToPixels.size() > 0){
 			for(var i = 0; i < latLongToPixels.size(); i++){
-            //System.println("Pozice: " + i + " Lat: " + routePoints[i].toDegrees()[1] + " Lon: " + routePoints[i].toDegrees()[0]);
-            latLongToPixels[i] = zoomLatlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight, zoom);
-            //System.println("Pozice: " + i + " X: " + latLongToPixels[i][0] + " Y: " + latLongToPixels[i][1]);
+            	latLongToPixels[i] = zoomLatlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight, zoom);
 			}
 		self.routeView.setCoords(latLongToPixels);
+		if(userPosition != null){
+			self.routeView.setUserPosition(zoomLatlngToScreenXY(userPosition[0], userPosition[1], topLeft, bottomRight, zoom));
+		}
 		self.routeView.requestUpdate();
 		}
 	}
 	
 	function setCurrentPosition(posInfo){
-		var userPosition = latlngToScreenXY(posInfo[0], posInfo[1], topLeft, bottomRight);
+		userPosition = posInfo;
 		System.println("USER X: " + userPosition[1] + " Y: " + userPosition[0]);
-		self.routeView.setUserPosition(userPosition);
+		self.routeView.setUserPosition(latlngToScreenXY(posInfo[0], posInfo[1], topLeft, bottomRight));
 	}
-
 }
