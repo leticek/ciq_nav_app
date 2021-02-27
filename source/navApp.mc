@@ -80,6 +80,8 @@ class NavApp extends Application.AppBase {
             
             topLeft = new MyReferencePoint(26, 36, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
             bottomRight = new MyReferencePoint(191, 181, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
+			//topLeft = new MyReferencePoint(0, 0, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
+            //bottomRight = new MyReferencePoint(218, 218, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
             topLeft.setGlobalXY(latlngToGlobalXY(topLeft.latitude, topLeft.longitude, topLeft, bottomRight));
             bottomRight.setGlobalXY(latlngToGlobalXY(bottomRight.latitude, bottomRight.longitude, topLeft, bottomRight));                       
 			setConversionRatio(topLeft, bottomRight);
@@ -149,12 +151,12 @@ class NavApp extends Application.AppBase {
     	pos.percentageX = ((165) / (p1.globalXY[0] - p0.globalXY[0]));
     	pos.percentageY = ((145) / (p1.globalXY[1] - p0.globalXY[1]));
 		if(ratioConvert){
-    		return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageX),
-    				218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageX)];
+    		return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageX),
+					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageX)];
 		}
 		else{
-			return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageY),
-    			218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageY)];
+			return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageY),
+					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageY)];
 		}
 	}
 	
@@ -163,12 +165,12 @@ class NavApp extends Application.AppBase {
     	pos.percentageX = ((165) / (p1.globalXY[0] - p0.globalXY[0]));
     	pos.percentageY = ((145) / (p1.globalXY[1] - p0.globalXY[1]));
 		if(ratioConvert){
-    		return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageX * zoom)),
-    				218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageX * zoom))];
+    		return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageX * zoom)),
+					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageX * zoom))];
 		}
 		else{
-			return [218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageY * zoom)),
-    				218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageY * zoom))];
+			return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageY * zoom)),
+					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageY * zoom))];
 		}
 	}
 	
@@ -178,16 +180,44 @@ class NavApp extends Application.AppBase {
 			for(var i = 0; i < latLongToPixels.size(); i++){
             	latLongToPixels[i] = zoomLatlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight, zoom);
 			}
-		self.routeView.setCoords(latLongToPixels);
-		if(userPosition != null){
-			self.routeView.setUserPosition(zoomLatlngToScreenXY(userPosition[0], userPosition[1], topLeft, bottomRight, zoom));
-		}
-		self.routeView.requestUpdate();
+			self.routeView.setCoords(latLongToPixels);
 		}
 	}
 	
 	function setCurrentPosition(posInfo){
 		userPosition = posInfo;
-		self.routeView.setUserPosition(latlngToScreenXY(posInfo[0], posInfo[1], topLeft, bottomRight));
+		var min = 1000;
+		var currentIndex = -1;
+		for(var i = 0; i < routePoints.size(); i++){
+			var tmp = distanceBetweenTwoPoints(routePoints[i], userPosition).abs();
+			System.println("Bod c." + i +" dist: " + tmp);
+			if(tmp < min){
+				min = tmp;
+				currentIndex = i;
+			}
+		}
+		self.routeView.setUserPosition(currentIndex);
 	}
+
+	function distanceBetweenTwoPoints(startPoint, endPoint){
+    	var startInRads = startPoint.toRadians();
+    	var endInRads = endPoint.toRadians();
+    	var startInDegs = startPoint.toDegrees();
+    	var endInDegs = endPoint.toDegrees();
+    	var theta = startInDegs[1] - endInDegs[1];
+    	var dist = Math.sin(startInRads[0]) * Math.sin(endInRads[0]) + Math.cos(startInRads[0]) * Math.cos(endInRads[0]) * Math.cos(deg2rad(theta));
+    	dist = Math.acos(dist);
+    	dist = rad2deg(dist);
+    	dist = dist * 60 * 1.1515;
+    	dist = (dist * 1.609344) * 1000;
+    	return dist;
+  	}
+  
+  	function deg2rad(deg){ 
+  		return (deg * Math.PI / 180.0);
+  	}
+
+  	function rad2deg(rad){ 
+  		return (rad * 180.0 / Math.PI);
+  	}
 }

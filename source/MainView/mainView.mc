@@ -2,9 +2,9 @@ using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.Communications;
 using Toybox.Position;
-using Toybox.Math;
 using Toybox.Lang;
 using Toybox.Application;
+using Toybox.Math;
 using Toybox.Time.Gregorian as Calendar;
 
 
@@ -34,7 +34,7 @@ class MainView extends WatchUi.View {
 		var str = time.hour + ":" + time.min + ":" + time.sec;
 		System.println(str);
 		var tmp = posInfo.position;
-		Application.getApp().setCurrentPosition(posInfo.position.toDegrees());
+		Application.getApp().setCurrentPosition(posInfo.position);
 		try{
 			var currPosition = posInfo.position;
 			if(isFirst){
@@ -45,7 +45,7 @@ class MainView extends WatchUi.View {
 				isFirst = false;
 			} 
 			else{
-				var traveledDistance = distanceBetweenTwoPoints(lastKnownPosition, currPosition);
+				var traveledDistance = Application.getApp().distanceBetweenTwoPoints(lastKnownPosition, currPosition);
 				totalDistance += traveledDistance;
 				var currDistance = distance - traveledDistance;
 				System.println(currDistance);
@@ -144,28 +144,6 @@ class MainView extends WatchUi.View {
     function onHide() {
     	System.println("main hide");
     }
-    
-    function distanceBetweenTwoPoints(startPoint, endPoint){
-    	var startInRads = startPoint.toRadians();
-    	var endInRads = endPoint.toRadians();
-    	var startInDegs = startPoint.toDegrees();
-    	var endInDegs = endPoint.toDegrees();
-    	var theta = startInDegs[1] - endInDegs[1];
-    	var dist = Math.sin(startInRads[0]) * Math.sin(endInRads[0]) + Math.cos(startInRads[0]) * Math.cos(endInRads[0]) * Math.cos(deg2rad(theta));
-    	dist = Math.acos(dist);
-    	dist = rad2deg(dist);
-    	dist = dist * 60 * 1.1515;
-    	dist = (dist * 1.609344) * 1000;
-    	return dist;
-  	}
-  
-  	function deg2rad(deg){ 
-  		return (deg * Math.PI / 180.0);
-  	}
-
-  	function rad2deg(rad){ 
-  		return (rad * 180.0 / Math.PI);
-  	}
 }
 
 
