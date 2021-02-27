@@ -1,6 +1,7 @@
 using Toybox.System;
 using Toybox.WatchUi;
 using Toybox.Graphics;
+using Toybox.Lang;
 
 class RouteView extends WatchUi.View {
 
@@ -23,8 +24,8 @@ class RouteView extends WatchUi.View {
     function setUserPosition(coords){
         self.userPosition = coords;
         System.println("USER X: " + self.userPosition[1] + " Y: " + self.userPosition[0]);
-        self.userPosition[0] += xOffset;
-        self.userPosition[1] += yOffset;
+        self.userPosition[1] += xOffset;
+        self.userPosition[0] += yOffset;
         System.println("USER X: " + self.userPosition[1] + " Y: " + self.userPosition[0]);
         self.requestUpdate();
     }
@@ -79,7 +80,7 @@ class RouteView extends WatchUi.View {
     		coordinates[i][0] -= 3 * (zoomLevel * 1.8);
     	}
         if(userPosition != null){
-            self.userPosition[0] -= yOffset;
+            self.userPosition[0] -= 3 * (zoomLevel * 1.8);
         }
     	self.requestUpdate();
     }
@@ -91,7 +92,7 @@ class RouteView extends WatchUi.View {
     		coordinates[i][0] += 3 * (zoomLevel * 1.8);
     	}
         if(userPosition != null){
-            self.userPosition[0] += yOffset;
+            self.userPosition[0] += 3 * (zoomLevel * 1.8);
         }
     	self.requestUpdate();
     }
@@ -103,7 +104,7 @@ class RouteView extends WatchUi.View {
     		coordinates[i][1] -= 3 * (zoomLevel * 1.8);
     	}
         if(userPosition != null){
-            self.userPosition[1] -= xOffset;
+            self.userPosition[1] -= 3 * (zoomLevel * 1.8);
         }
     	self.requestUpdate();
     }
@@ -115,7 +116,7 @@ class RouteView extends WatchUi.View {
     		coordinates[i][1] += 3 * (zoomLevel * 1.8);
     	}
         if(userPosition != null){
-            self.userPosition[1] += xOffset;
+            self.userPosition[1] += 3 * (zoomLevel * 1.8);
         }
     	self.requestUpdate();
     }

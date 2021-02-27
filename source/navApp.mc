@@ -188,7 +188,6 @@ class NavApp extends Application.AppBase {
 	
 	function setCurrentPosition(posInfo){
 		userPosition = posInfo;
-		System.println("USER X: " + userPosition[1] + " Y: " + userPosition[0]);
 		self.routeView.setUserPosition(latlngToScreenXY(posInfo[0], posInfo[1], topLeft, bottomRight));
 	}
 }
