@@ -161,7 +161,6 @@ class NavApp extends Application.AppBase {
 			}
 		self.routeView.setCoords(latLongToPixels);
 		self.routeView.requestUpdate();
-<<<<<<< HEAD
 		}
 	}
 	
@@ -169,12 +168,6 @@ class NavApp extends Application.AppBase {
 		var userPosition = latlngToScreenXY(posInfo[0], posInfo[1], topLeft, bottomRight);
 		System.println("USER X: " + userPosition[1] + " Y: " + userPosition[0]);
 		self.routeView.setUserPosition(userPosition);
-=======
-		
-		}
-	
-	
->>>>>>> efb6c3b1a7a57504a9532caf5ce3b6b6c4f813b4
 	}
 
 }

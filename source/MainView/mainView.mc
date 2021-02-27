@@ -171,6 +171,7 @@ class MainView extends WatchUi.View {
 
 class MyConnectionListener extends Communications.ConnectionListener{
 	function initialize(){
+		ConnectionListener.initialize();
 	}
 
 }
