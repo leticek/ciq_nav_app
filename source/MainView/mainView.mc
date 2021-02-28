@@ -110,7 +110,7 @@ class MainView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
-    	startNavigate();
+    	//startNavigate();
         System.println("main init");
     }
 
@@ -135,7 +135,6 @@ class MainView extends WatchUi.View {
     	dc.drawText(dc.getWidth() / 2, 120, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
     	dc.drawText(dc.getWidth() / 1.88, 160, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
     	dc.drawText(dc.getWidth() / 1.88, 190, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
-    	 
     }
 
     // Called when this View is removed from the screen. Save the

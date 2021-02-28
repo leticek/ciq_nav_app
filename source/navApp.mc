@@ -9,6 +9,7 @@ class NavApp extends Application.AppBase {
 
 	hidden var routeView;
     hidden var mainView;
+	hidden var loadView;
 	hidden var mainViewBehaviorDelegate;
 
 	hidden var userPosition;
@@ -21,6 +22,8 @@ class NavApp extends Application.AppBase {
 	hidden var radius = 6371;
 	hidden var topLeft;
 	hidden var bottomRight;
+	var dataCounter = 0;
+	var gpsReady = false;
 	
     function initialize() {
         AppBase.initialize();
@@ -31,6 +34,8 @@ class NavApp extends Application.AppBase {
     function onStart(state) {
 		self.routeView = new RouteView();
         self.mainView = new MainView();
+		self.loadView = new LoadView();
+		//Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
 		self.mainViewBehaviorDelegate = new MainViewBehaviorDelegate(self.mainView, self.routeView);
     }
     
@@ -40,7 +45,8 @@ class NavApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [self.mainView, self.mainViewBehaviorDelegate];
+        return [self.loadView];
+		//return [self.mainView, self.mainViewBehaviorDelegate];
     }
 
     function messageReceived(message){
@@ -48,9 +54,12 @@ class NavApp extends Application.AppBase {
 			try{
 				routeSteps = parseRouteSteps(message);
 				self.mainView.setRouteSteps(routeSteps);
+				self.dataCounter += 1;
+				self.loadView.requestUpdate();
 				System.println("routeSteps parsed");
 			}
 			catch(ex){
+				System.println("routeSteps exc");
 				System.println(ex.getErrorMessage());
 			}	
 		}
@@ -58,38 +67,42 @@ class NavApp extends Application.AppBase {
 			try{
 				routePoints = parseWayPoints(message);
 				self.mainView.setRoutePoints(routePoints);
+				self.dataCounter += 1;
+				self.loadView.requestUpdate();
 				System.println("routePoints parsed");
 			}
 			catch(ex){
+				System.println("routePoints exc");
 				System.println(ex.getErrorMessage());
 			}
 		}
         if(message.data["type"].toString().equals("boundingBox")){
-			
-			boundingBox = new [2];
-            boundingBox[0] = new Position.Location({
-												 :latitude => message.data["data"][1],
-        										 :longitude => message.data["data"][0],
-        										 :format => :degrees});
-            boundingBox[1] = new Position.Location({
-												 :latitude => message.data["data"][3],
-        										 :longitude => message.data["data"][2],
-        										 :format => :degrees});
-            latLongToPixels = new [routePoints.size()];
-            
-            
-            topLeft = new MyReferencePoint(26, 36, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
-            bottomRight = new MyReferencePoint(191, 181, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
-			//topLeft = new MyReferencePoint(0, 0, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
-            //bottomRight = new MyReferencePoint(218, 218, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
-            topLeft.setGlobalXY(latlngToGlobalXY(topLeft.latitude, topLeft.longitude, topLeft, bottomRight));
-            bottomRight.setGlobalXY(latlngToGlobalXY(bottomRight.latitude, bottomRight.longitude, topLeft, bottomRight));                       
-			setConversionRatio(topLeft, bottomRight);
-			System.println("ratio: " + ratioConvert);
-
-            parse(routePoints, topLeft, bottomRight, latLongToPixels, latLongToPixels.size());
-            self.routeView.setCoords(latLongToPixels);
-            System.println("converted");
+			try{
+				boundingBox = new [2];
+            	boundingBox[0] = new Position.Location({
+													 :latitude => message.data["data"][1],
+        											 :longitude => message.data["data"][0],
+        											 :format => :degrees});
+            	boundingBox[1] = new Position.Location({
+													 :latitude => message.data["data"][3],
+        											 :longitude => message.data["data"][2],
+        											 :format => :degrees});
+            	latLongToPixels = new [routePoints.size()];
+            	topLeft = new MyReferencePoint(26, 36, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
+            	bottomRight = new MyReferencePoint(191, 181, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
+            	topLeft.setGlobalXY(latlngToGlobalXY(topLeft.latitude, topLeft.longitude, topLeft, bottomRight));
+            	bottomRight.setGlobalXY(latlngToGlobalXY(bottomRight.latitude, bottomRight.longitude, topLeft, bottomRight));                       
+				setConversionRatio(topLeft, bottomRight);
+            	parse(routePoints, topLeft, bottomRight, latLongToPixels, latLongToPixels.size());
+            	self.routeView.setCoords(latLongToPixels);
+				self.dataCounter += 1;
+				self.loadView.requestUpdate();
+            	System.println("converted");
+			}
+			catch(ex){
+				System.println("boundingBox exc");
+				System.println(ex.getErrorMessage());
+			}
 		}
 	}
 
@@ -174,7 +187,6 @@ class NavApp extends Application.AppBase {
 		}
 	}
 	
-	
 	function calculateZoom(zoom){
 		if(latLongToPixels != null && latLongToPixels.size() > 0){
 			for(var i = 0; i < latLongToPixels.size(); i++){
@@ -190,7 +202,6 @@ class NavApp extends Application.AppBase {
 		var currentIndex = -1;
 		for(var i = 0; i < routePoints.size(); i++){
 			var tmp = distanceBetweenTwoPoints(routePoints[i], userPosition).abs();
-			System.println("Bod c." + i +" dist: " + tmp);
 			if(tmp < min){
 				min = tmp;
 				currentIndex = i;

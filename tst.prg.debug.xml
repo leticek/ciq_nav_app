@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\smiea\eclipse-workspace\tst\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="3" lineNum="16" pc="268435456" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="3" lineNum="17" pc="268435460" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="3" lineNum="18" pc="268435478" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="4" lineNum="21" pc="268435500" symbol="setCoords"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="4" lineNum="22" pc="268435504" symbol="setCoords"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="4" lineNum="23" pc="268435515" symbol="setCoords"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="4" lineNum="24" pc="268435531" symbol="setCoords"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="4" lineNum="26" pc="268435544" symbol="setCoords"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="4" lineNum="27" pc="268435554" symbol="setCoords"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="5" lineNum="30" pc="268435567" symbol="setUserPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="5" lineNum="31" pc="268435571" symbol="setUserPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="5" lineNum="32" pc="268435581" symbol="setUserPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="6" lineNum="35" pc="268435594" symbol="onLayout"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="7" lineNum="39" pc="268435599" symbol="onShow"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="7" lineNum="40" pc="268435603" symbol="onShow"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="43" pc="268435620" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="44" pc="268435624" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="45" pc="268435660" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="54" pc="268435672" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="55" pc="268435729" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="56" pc="268435786" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="57" pc="268435843" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="58" pc="268435900" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="59" pc="268435936" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="60" pc="268435966" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="61" pc="268435980" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="62" pc="268436016" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="63" pc="268436077" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="66" pc="268436116" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="68" pc="268436177" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="8" lineNum="69" pc="268436206" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="9" lineNum="75" pc="268436318" symbol="onHide"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="9" lineNum="76" pc="268436322" symbol="onHide"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="10" lineNum="80" pc="268436344" symbol="moveUp"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="10" lineNum="81" pc="268436348" symbol="moveUp"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="10" lineNum="82" pc="268436361" symbol="moveUp"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="10" lineNum="84" pc="268436395" symbol="moveUp"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="10" lineNum="85" pc="268436425" symbol="moveUp"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="10" lineNum="87" pc="268436481" symbol="moveUp"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="11" lineNum="91" pc="268436497" symbol="moveDown"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="11" lineNum="92" pc="268436501" symbol="moveDown"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="11" lineNum="93" pc="268436514" symbol="moveDown"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="11" lineNum="95" pc="268436548" symbol="moveDown"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="11" lineNum="96" pc="268436578" symbol="moveDown"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="11" lineNum="98" pc="268436634" symbol="moveDown"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="12" lineNum="102" pc="268436650" symbol="moveLeft"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="12" lineNum="103" pc="268436654" symbol="moveLeft"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="12" lineNum="104" pc="268436667" symbol="moveLeft"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="12" lineNum="106" pc="268436701" symbol="moveLeft"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="12" lineNum="107" pc="268436731" symbol="moveLeft"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="12" lineNum="109" pc="268436787" symbol="moveLeft"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="113" pc="268436803" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="114" pc="268436807" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="115" pc="268436820" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="116" pc="268436854" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="117" pc="268436899" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="118" pc="268436929" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="13" lineNum="120" pc="268436985" symbol="moveRight"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="124" pc="268437001" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="125" pc="268437005" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="126" pc="268437018" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="127" pc="268437023" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="128" pc="268437042" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="131" pc="268437080" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="132" pc="268437099" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeView.mc" id="14" lineNum="135" pc="268437137" symbol="zoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\myPoint.mc" id="16" lineNum="7" pc="268437150" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\myPoint.mc" id="16" lineNum="8" pc="268437154" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\myPoint.mc" id="16" lineNum="9" pc="268437176" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\myPoint.mc" id="16" lineNum="2" pc="268444255" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="18" lineNum="25" pc="268437199" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="18" lineNum="26" pc="268437203" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="18" lineNum="27" pc="268437221" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="19" lineNum="31" pc="268437254" symbol="onStart"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="19" lineNum="32" pc="268437258" symbol="onStart"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="19" lineNum="33" pc="268437288" symbol="onStart"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="19" lineNum="34" pc="268437318" symbol="onStart"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="20" lineNum="38" pc="268437365" symbol="onStop"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="21" lineNum="42" pc="268437370" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="21" lineNum="43" pc="268437374" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="46" pc="268437414" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="47" pc="268437418" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="48" pc="268437458" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="49" pc="268437458" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="50" pc="268437479" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="51" pc="268437505" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="54" pc="268437536" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="57" pc="268437578" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="58" pc="268437618" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="59" pc="268437618" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="60" pc="268437639" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="61" pc="268437665" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="64" pc="268437696" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="67" pc="268437738" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="69" pc="268437778" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="70" pc="268437792" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="74" pc="268437907" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="78" pc="268438022" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="81" pc="268438048" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="82" pc="268438146" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="85" pc="268438244" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="86" pc="268438317" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="87" pc="268438390" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="88" pc="268438418" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="90" pc="268438448" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="91" pc="268438509" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="22" lineNum="92" pc="268438535" symbol="messageReceived"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="23" lineNum="96" pc="268438560" symbol="setConversionRatio"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="23" lineNum="97" pc="268438564" symbol="setConversionRatio"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="23" lineNum="98" pc="268438626" symbol="setConversionRatio"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="23" lineNum="101" pc="268438639" symbol="setConversionRatio"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="24" lineNum="105" pc="268438650" symbol="parse"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="24" lineNum="106" pc="268438654" symbol="parse"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="24" lineNum="107" pc="268438669" symbol="parse"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="25" lineNum="111" pc="268438743" symbol="parseRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="25" lineNum="112" pc="268438747" symbol="parseRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="25" lineNum="113" pc="268438773" symbol="parseRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="25" lineNum="114" pc="268438797" symbol="parseRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="25" lineNum="129" pc="268439213" symbol="parseRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="26" lineNum="132" pc="268439217" symbol="parseWayPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="26" lineNum="133" pc="268439221" symbol="parseWayPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="26" lineNum="134" pc="268439247" symbol="parseWayPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="26" lineNum="135" pc="268439271" symbol="parseWayPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="26" lineNum="140" pc="268439396" symbol="parseWayPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="27" lineNum="143" pc="268439400" symbol="latlngToGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="27" lineNum="144" pc="268439404" symbol="latlngToGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="27" lineNum="145" pc="268439456" symbol="latlngToGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="27" lineNum="146" pc="268439469" symbol="latlngToGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="149" pc="268439497" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="150" pc="268439501" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="151" pc="268439544" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="152" pc="268439587" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="153" pc="268439630" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="154" pc="268439641" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="28" lineNum="158" pc="268439773" symbol="latlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="163" pc="268439903" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="164" pc="268439907" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="165" pc="268439950" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="166" pc="268439993" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="167" pc="268440036" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="168" pc="268440047" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="29" lineNum="172" pc="268440185" symbol="zoomLatlngToScreenXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="30" lineNum="178" pc="268440321" symbol="calculateZoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="30" lineNum="179" pc="268440325" symbol="calculateZoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="30" lineNum="180" pc="268440367" symbol="calculateZoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="30" lineNum="181" pc="268440397" symbol="calculateZoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="30" lineNum="183" pc="268440502" symbol="calculateZoom"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="187" pc="268440532" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="188" pc="268440536" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="189" pc="268440546" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="190" pc="268440553" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="191" pc="268440560" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="192" pc="268440590" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="193" pc="268440631" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="194" pc="268440639" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="195" pc="268440643" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="31" lineNum="198" pc="268440663" symbol="setCurrentPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="201" pc="268440684" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="202" pc="268440688" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="203" pc="268440701" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="204" pc="268440714" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="205" pc="268440727" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="206" pc="268440740" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="207" pc="268440759" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="208" pc="268440885" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="209" pc="268440904" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="210" pc="268440919" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="211" pc="268440935" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="32" lineNum="212" pc="268440951" symbol="distanceBetweenTwoPoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="33" lineNum="215" pc="268440955" symbol="deg2rad"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="33" lineNum="216" pc="268440959" symbol="deg2rad"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="34" lineNum="219" pc="268440982" symbol="rad2deg"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\navApp.mc" id="34" lineNum="220" pc="268440986" symbol="rad2deg"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="36" lineNum="9" pc="268441009" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="36" lineNum="10" pc="268441013" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="36" lineNum="11" pc="268441023" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="36" lineNum="12" pc="268441033" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="36" lineNum="13" pc="268441043" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="37" lineNum="16" pc="268441054" symbol="setGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="37" lineNum="17" pc="268441058" symbol="setGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="37" lineNum="18" pc="268441080" symbol="setGlobalXY"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\referencePoint.mc" id="37" lineNum="6" pc="268444135" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="39" lineNum="10" pc="268441103" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="39" lineNum="11" pc="268441107" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="39" lineNum="12" pc="268441125" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="39" lineNum="13" pc="268441135" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="40" lineNum="16" pc="268441146" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="40" lineNum="17" pc="268441150" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="40" lineNum="18" pc="268441173" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="40" lineNum="19" pc="268441190" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="40" lineNum="20" pc="268441203" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="40" lineNum="22" pc="268441248" symbol="onNextPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="41" lineNum="25" pc="268441252" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="41" lineNum="26" pc="268441256" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="41" lineNum="27" pc="268441279" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="41" lineNum="28" pc="268441296" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="41" lineNum="29" pc="268441309" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="41" lineNum="31" pc="268441354" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="44" pc="268441358" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="45" pc="268441362" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="46" pc="268441379" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="47" pc="268441398" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="48" pc="268441417" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="49" pc="268441456" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="51" pc="268441477" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="52" pc="268441516" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="54" pc="268441537" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="55" pc="268441576" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="57" pc="268441597" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="58" pc="268441636" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="61" pc="268441657" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="42" lineNum="65" pc="268441686" symbol="onTap"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="43" lineNum="68" pc="268441690" symbol="onSwipe"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="43" lineNum="69" pc="268441694" symbol="onSwipe"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="43" lineNum="70" pc="268441714" symbol="onSwipe"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="43" lineNum="72" pc="268441734" symbol="onSwipe"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainViewDelegate.mc" id="44" lineNum="75" pc="268441738" symbol="onMenu"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="12" pc="268441743" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="13" pc="268441747" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="14" pc="268441757" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="15" pc="268441767" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="16" pc="268441777" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="17" pc="268441787" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="18" pc="268441797" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="19" pc="268441807" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\models\\routeStep.mc" id="46" lineNum="20" pc="268441817" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeViewBehaviorDelegate.mc" id="48" lineNum="5" pc="268441828" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\RouteView\\routeViewBehaviorDelegate.mc" id="48" lineNum="6" pc="268441832" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="50" lineNum="23" pc="268441851" symbol="setRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="50" lineNum="24" pc="268441855" symbol="setRouteSteps"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="51" lineNum="27" pc="268441866" symbol="setRoutePoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="51" lineNum="28" pc="268441870" symbol="setRoutePoints"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="31" pc="268441881" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="32" pc="268441885" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="33" pc="268441904" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="34" pc="268441937" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="35" pc="268441977" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="36" pc="268441997" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="37" pc="268442007" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="38" pc="268442040" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="39" pc="268442040" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="40" pc="268442050" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="41" pc="268442061" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="42" pc="268442084" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="43" pc="268442115" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="44" pc="268442138" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="45" pc="268442148" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="48" pc="268442161" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="49" pc="268442197" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="50" pc="268442213" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="51" pc="268442226" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="52" pc="268442246" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="53" pc="268442257" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="54" pc="268442283" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="55" pc="268442318" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="56" pc="268442337" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="59" pc="268442368" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="60" pc="268442378" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="62" pc="268442388" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="63" pc="268442429" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="95" pc="268442652" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="96" pc="268442695" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="65" pc="268442701" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="66" pc="268442744" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="68" pc="268442747" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="69" pc="268442790" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="71" pc="268442793" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="72" pc="268442836" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="74" pc="268442839" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="75" pc="268442882" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="77" pc="268442885" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="78" pc="268442928" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="80" pc="268442931" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="81" pc="268442974" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="83" pc="268442977" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="84" pc="268443020" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="86" pc="268443023" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="87" pc="268443066" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="89" pc="268443069" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="90" pc="268443112" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="92" pc="268443115" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="93" pc="268443158" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="98" pc="268443164" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="99" pc="268443195" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="100" pc="268443245" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="52" lineNum="103" pc="268443271" symbol="onPosition"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="53" lineNum="107" pc="268443313" symbol="startNavigate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="53" lineNum="108" pc="268443317" symbol="startNavigate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="54" lineNum="111" pc="268443362" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="54" lineNum="112" pc="268443366" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="54" lineNum="113" pc="268443384" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="54" lineNum="114" pc="268443396" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="55" lineNum="118" pc="268443420" symbol="onLayout"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="56" lineNum="124" pc="268443425" symbol="onShow"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="56" lineNum="125" pc="268443429" symbol="onShow"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="129" pc="268443446" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="130" pc="268443450" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="131" pc="268443486" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="132" pc="268443498" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="133" pc="268443511" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="135" pc="268443556" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="136" pc="268443615" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="57" lineNum="137" pc="268443695" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="58" lineNum="144" pc="268443776" symbol="onHide"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="58" lineNum="145" pc="268443780" symbol="onHide"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="60" lineNum="151" pc="268443804" symbol="initialize"/>
+        <entry filename="C:\\Users\\smiea\\eclipse-workspace\\tst\\source\\MainView\\mainView.mc" id="60" lineNum="152" pc="268443808" symbol="initialize"/>
+        <entry filename="Rez" id="64" lineNum="25" pc="268443827" symbol="initialize"/>
+        <entry filename="Rez" id="64" lineNum="26" pc="268443831" symbol="initialize"/>
+        <entry filename="Rez" id="65" lineNum="29" pc="268443856" symbol="draw"/>
+        <entry filename="Rez" id="65" lineNum="31" pc="268443860" symbol="draw"/>
+        <entry filename="Rez" id="65" lineNum="32" pc="268443896" symbol="draw"/>
+        <entry filename="Rez" id="71" lineNum="53" pc="268443929" symbol="initialize"/>
+        <entry filename="Rez" id="71" lineNum="54" pc="268443933" symbol="initialize"/>
+        <entry filename="Rez" id="71" lineNum="55" pc="268443951" symbol="initialize"/>
+        <entry filename="Rez" id="71" lineNum="56" pc="268444007" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="14" object="true" symbol="RouteStep"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="10" object="true" symbol="MyPoint"/>
+        <entry id="26" method="true" symbol="setUserPosition"/>
+        <entry field="true" id="34" symbol="mainViewBehaviorDelegate"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="50" method="true" symbol="setCurrentPosition"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="101" symbol="currentScreen"/>
+        <entry field="true" id="73" symbol="downArrow"/>
+        <entry field="true" id="87" symbol="endPoint"/>
+        <entry field="true" id="8389759" symbol="radius"/>
+        <entry field="true" id="65" symbol="sharpLeft"/>
+        <entry field="true" id="8389310" symbol="position"/>
+        <entry id="27" method="true" symbol="moveUp"/>
+        <entry field="true" id="69" symbol="depart"/>
+        <entry id="9" object="true" symbol="RouteView"/>
+        <entry id="99" method="true" symbol="onPosition"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="45" method="true" symbol="parseWayPoints"/>
+        <entry id="29" method="true" symbol="moveLeft"/>
+        <entry field="true" id="94" symbol="lastKnownPosition"/>
+        <entry field="true" id="80" symbol="AppName"/>
+        <entry id="52" method="true" symbol="deg2rad"/>
+        <entry field="true" id="78" symbol="myDir"/>
+        <entry field="true" id="62" symbol="sharpRight"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="49" method="true" symbol="calculateZoom"/>
+        <entry field="true" id="67" symbol="uTurn"/>
+        <entry id="57" method="true" symbol="setGlobalXY"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="38" symbol="boundingBox"/>
+        <entry id="30" method="true" symbol="moveRight"/>
+        <entry field="true" id="33" symbol="mainView"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="79" symbol="prompt"/>
+        <entry id="16" object="true" symbol="MainView"/>
+        <entry field="true" id="23" symbol="originalPos"/>
+        <entry id="11" object="true" symbol="NavApp"/>
+        <entry field="true" id="20" symbol="xOffset"/>
+        <entry field="true" id="96" symbol="totalDistance"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="56" symbol="globalXY"/>
+        <entry id="28" method="true" symbol="moveDown"/>
+        <entry id="8388764" method="true" symbol="format"/>
+        <entry id="42" method="true" symbol="messageReceived"/>
+        <entry id="8389299" method="true" symbol="parse"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="8389314" symbol="latitude"/>
+        <entry id="31" method="true" symbol="zoom"/>
+        <entry id="104" symbol="item_2"/>
+        <entry id="103" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="59" module="true" symbol="Menus"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="93" symbol="currStep"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="35" symbol="ratioConvert"/>
+        <entry field="true" id="71" symbol="rightArrow"/>
+        <entry id="8389098" method="true" symbol="onTap"/>
+        <entry id="98" method="true" symbol="setRoutePoints"/>
+        <entry field="true" id="92" symbol="instruction"/>
+        <entry id="25" method="true" symbol="setCoords"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="39" symbol="latLongToPixels"/>
+        <entry field="true" id="8389892" object="true" symbol="background"/>
+        <entry field="true" id="40" symbol="topLeft"/>
+        <entry field="true" id="8388911" symbol="distance"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry field="true" id="82" symbol="percentageY"/>
+        <entry field="true" id="81" symbol="percentageX"/>
+        <entry field="true" id="19" symbol="zoomLevel"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="17" object="true" symbol="MyConnectionListener"/>
+        <entry field="true" id="86" symbol="startPoint"/>
+        <entry id="75" object="true" symbol="MainMenu"/>
+        <entry field="true" id="72" symbol="upArrow"/>
+        <entry field="true" id="83" symbol="hasPassed"/>
+        <entry field="true" id="70" symbol="leftArrow"/>
+        <entry field="true" id="102" symbol="zoomMode"/>
+        <entry id="47" method="true" symbol="latlngToScreenXY"/>
+        <entry field="true" id="21" symbol="yOffset"/>
+        <entry id="44" method="true" symbol="parseRouteSteps"/>
+        <entry field="true" id="68" symbol="goal"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="8389315" symbol="longitude"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="51" method="true" symbol="distanceBetweenTwoPoints"/>
+        <entry field="true" id="61" symbol="slightRight"/>
+        <entry id="100" method="true" symbol="startNavigate"/>
+        <entry field="true" id="91" symbol="routePointsList"/>
+        <entry id="48" method="true" symbol="zoomLatlngToScreenXY"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="90" symbol="routeStepList"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="32" symbol="routeView"/>
+        <entry field="true" id="60" symbol="right"/>
+        <entry field="true" id="74" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="24" symbol="userPosition"/>
+        <entry field="true" id="55" symbol="screenY"/>
+        <entry field="true" id="54" symbol="screenX"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="64" symbol="slightLeft"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="41" symbol="bottomRight"/>
+        <entry field="true" id="22" symbol="isFirst"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="89" symbol="finishWayPoint"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="36" symbol="routeSteps"/>
+        <entry id="12" object="true" symbol="MyReferencePoint"/>
+        <entry field="true" id="66" symbol="straight"/>
+        <entry id="43" method="true" symbol="setConversionRatio"/>
+        <entry id="53" method="true" symbol="rad2deg"/>
+        <entry id="15" object="true" symbol="RouteViewBehaviorDelegate"/>
+        <entry id="58" module="true" symbol="Layouts"/>
+        <entry id="8389317" symbol="degrees"/>
+        <entry field="true" id="37" symbol="routePoints"/>
+        <entry field="true" id="85" symbol="instructionType"/>
+        <entry field="true" id="63" symbol="left"/>
+        <entry field="true" id="84" symbol="stepInstruction"/>
+        <entry id="8388642" module="true" symbol="Position"/>
+        <entry field="true" id="88" symbol="startWayPoint"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="95" symbol="directionImage"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="46" method="true" symbol="latlngToGlobalXY"/>
+        <entry id="97" method="true" symbol="setRouteSteps"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="13" object="true" symbol="MainViewBehaviorDelegate"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="18" symbol="coordinates"/>
+        <entry field="true" id="77" symbol="menu_label_2"/>
+        <entry field="true" id="76" symbol="menu_label_1"/>
+        <entry id="8389101" method="true" symbol="onSwipe"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435567" name="coords" stackId="1" startPc="268435500"/>
+        <entry arg="true" endPc="268435594" name="currentIndex" stackId="1" startPc="268435567"/>
+        <entry arg="true" endPc="268435599" name="dc" stackId="1" startPc="268435594"/>
+        <entry endPc="268436314" name="i" stackId="2" startPc="268435966"/>
+        <entry arg="true" endPc="268436318" name="dc" stackId="1" startPc="268435620"/>
+        <entry endPc="268436481" name="i" stackId="1" startPc="268436425"/>
+        <entry endPc="268436634" name="i" stackId="1" startPc="268436578"/>
+        <entry endPc="268436787" name="i" stackId="1" startPc="268436731"/>
+        <entry endPc="268436985" name="i" stackId="1" startPc="268436929"/>
+        <entry arg="true" endPc="268437150" name="zoomMode" stackId="1" startPc="268437001"/>
+        <entry arg="true" endPc="268437199" name="pos" stackId="1" startPc="268437150"/>
+        <entry arg="true" endPc="268437365" name="state" stackId="1" startPc="268437254"/>
+        <entry arg="true" endPc="268437370" name="state" stackId="1" startPc="268437365"/>
+        <entry arg="true" endPc="268438560" name="message" stackId="1" startPc="268437414"/>
+        <entry arg="true" endPc="268438650" name="bottomRight" stackId="2" startPc="268438560"/>
+        <entry arg="true" endPc="268438650" name="topLeft" stackId="1" startPc="268438560"/>
+        <entry endPc="268438742" name="i" stackId="6" startPc="268438669"/>
+        <entry arg="true" endPc="268438743" name="velikost" stackId="5" startPc="268438650"/>
+        <entry arg="true" endPc="268438743" name="bottomRight" stackId="3" startPc="268438650"/>
+        <entry arg="true" endPc="268438743" name="topLeft" stackId="2" startPc="268438650"/>
+        <entry arg="true" endPc="268438743" name="routePoints" stackId="1" startPc="268438650"/>
+        <entry arg="true" endPc="268438743" name="latLongToPixels" stackId="4" startPc="268438650"/>
+        <entry endPc="268439213" name="i" stackId="3" startPc="268438797"/>
+        <entry endPc="268439216" name="parsedRouteSteps" stackId="2" startPc="268438747"/>
+        <entry arg="true" endPc="268439217" name="receivedMessage" stackId="1" startPc="268438743"/>
+        <entry endPc="268439396" name="i" stackId="3" startPc="268439271"/>
+        <entry endPc="268439399" name="parsedWayPoints" stackId="2" startPc="268439221"/>
+        <entry arg="true" endPc="268439400" name="receivedMessage" stackId="1" startPc="268439217"/>
+        <entry endPc="268439496" name="x" stackId="5" startPc="268439404"/>
+        <entry endPc="268439496" name="y" stackId="6" startPc="268439404"/>
+        <entry arg="true" endPc="268439497" name="lng" stackId="2" startPc="268439400"/>
+        <entry arg="true" endPc="268439497" name="lat" stackId="1" startPc="268439400"/>
+        <entry arg="true" endPc="268439497" name="p1" stackId="4" startPc="268439400"/>
+        <entry arg="true" endPc="268439497" name="p0" stackId="3" startPc="268439400"/>
+        <entry endPc="268439902" name="pos" stackId="5" startPc="268439501"/>
+        <entry arg="true" endPc="268439903" name="lng" stackId="2" startPc="268439497"/>
+        <entry arg="true" endPc="268439903" name="lat" stackId="1" startPc="268439497"/>
+        <entry arg="true" endPc="268439903" name="p1" stackId="4" startPc="268439497"/>
+        <entry arg="true" endPc="268439903" name="p0" stackId="3" startPc="268439497"/>
+        <entry endPc="268440320" name="pos" stackId="6" startPc="268439907"/>
+        <entry arg="true" endPc="268440321" name="lng" stackId="2" startPc="268439903"/>
+        <entry arg="true" endPc="268440321" name="zoom" stackId="5" startPc="268439903"/>
+        <entry arg="true" endPc="268440321" name="lat" stackId="1" startPc="268439903"/>
+        <entry arg="true" endPc="268440321" name="p1" stackId="4" startPc="268439903"/>
+        <entry arg="true" endPc="268440321" name="p0" stackId="3" startPc="268439903"/>
+        <entry endPc="268440502" name="i" stackId="2" startPc="268440397"/>
+        <entry arg="true" endPc="268440532" name="zoom" stackId="1" startPc="268440321"/>
+        <entry endPc="268440650" name="tmp" stackId="5" startPc="268440590"/>
+        <entry endPc="268440663" name="i" stackId="4" startPc="268440590"/>
+        <entry endPc="268440683" name="currentIndex" stackId="3" startPc="268440536"/>
+        <entry endPc="268440683" name="min" stackId="2" startPc="268440536"/>
+        <entry arg="true" endPc="268440684" name="posInfo" stackId="1" startPc="268440532"/>
+        <entry endPc="268440954" name="endInDegs" stackId="6" startPc="268440688"/>
+        <entry endPc="268440954" name="endInRads" stackId="4" startPc="268440688"/>
+        <entry endPc="268440954" name="theta" stackId="7" startPc="268440688"/>
+        <entry endPc="268440954" name="startInDegs" stackId="5" startPc="268440688"/>
+        <entry endPc="268440954" name="startInRads" stackId="3" startPc="268440688"/>
+        <entry endPc="268440954" name="dist" stackId="8" startPc="268440688"/>
+        <entry arg="true" endPc="268440955" name="endPoint" stackId="2" startPc="268440684"/>
+        <entry arg="true" endPc="268440955" name="startPoint" stackId="1" startPc="268440684"/>
+        <entry arg="true" endPc="268440982" name="deg" stackId="1" startPc="268440955"/>
+        <entry arg="true" endPc="268441009" name="rad" stackId="1" startPc="268440982"/>
+        <entry arg="true" endPc="268441054" name="scrY" stackId="2" startPc="268441009"/>
+        <entry arg="true" endPc="268441054" name="scrX" stackId="1" startPc="268441009"/>
+        <entry arg="true" endPc="268441054" name="lat" stackId="3" startPc="268441009"/>
+        <entry arg="true" endPc="268441054" name="lon" stackId="4" startPc="268441009"/>
+        <entry arg="true" endPc="268441103" name="position" stackId="1" startPc="268441054"/>
+        <entry arg="true" endPc="268441146" name="mainView" stackId="1" startPc="268441103"/>
+        <entry arg="true" endPc="268441146" name="routeView" stackId="2" startPc="268441103"/>
+        <entry endPc="268441683" name="xTapped" stackId="2" startPc="268441379"/>
+        <entry endPc="268441683" name="yTapped" stackId="3" startPc="268441379"/>
+        <entry arg="true" endPc="268441690" name="clickEvent" stackId="1" startPc="268441358"/>
+        <entry arg="true" endPc="268441738" name="swipeEvent" stackId="1" startPc="268441690"/>
+        <entry arg="true" endPc="268441743" name="swipeEvent" stackId="1" startPc="268441738"/>
+        <entry arg="true" endPc="268441828" name="end" stackId="5" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="ins" stackId="2" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="fWayPoint" stackId="7" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="type" stackId="3" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="sWayPoint" stackId="6" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="dist" stackId="8" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="start" stackId="4" startPc="268441743"/>
+        <entry arg="true" endPc="268441828" name="passed" stackId="1" startPc="268441743"/>
+        <entry arg="true" endPc="268441866" name="routeSteps" stackId="1" startPc="268441851"/>
+        <entry arg="true" endPc="268441881" name="routePoints" stackId="1" startPc="268441866"/>
+        <entry endPc="268442388" name="currDistance" stackId="8" startPc="268442161"/>
+        <entry endPc="268442388" name="traveledDistance" stackId="7" startPc="268442161"/>
+        <entry endPc="268443261" name="currPosition" stackId="6" startPc="268442040"/>
+        <entry endPc="268443312" name="now" stackId="2" startPc="268441885"/>
+        <entry endPc="268443312" name="tmp" stackId="5" startPc="268441885"/>
+        <entry endPc="268443312" name="time" stackId="3" startPc="268441885"/>
+        <entry endPc="268443312" name="str" stackId="4" startPc="268441885"/>
+        <entry arg="true" endPc="268443313" name="posInfo" stackId="1" startPc="268441881"/>
+        <entry arg="true" endPc="268443425" name="dc" stackId="1" startPc="268443420"/>
+        <entry arg="true" endPc="268443776" name="dc" stackId="1" startPc="268443446"/>
+        <entry arg="true" endPc="268443929" name="dc" stackId="1" startPc="268443856"/>
+    </localVars>
+    <annotations/>
+    <dataEntryOffsetMappings>
+        <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry offset="206" parentId="globals" symbolId="RouteView" type="class"/>
+        <dataEntry offset="397" parentId="globals" symbolId="NavApp" type="class"/>
+        <dataEntry offset="668" parentId="globals" symbolId="MyReferencePoint" type="class"/>
+        <dataEntry offset="763" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry offset="842" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry offset="1001" parentId="Drawables" symbolId="background" type="class"/>
+        <dataEntry offset="1056" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry offset="1095" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry offset="1142" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry offset="1173" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry offset="1204" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry offset="1235" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry offset="1306" parentId="globals" symbolId="MyConnectionListener" type="class"/>
+        <dataEntry offset="1353" parentId="globals" symbolId="MyPoint" type="class"/>
+        <dataEntry offset="1424" parentId="globals" symbolId="RouteStep" type="class"/>
+        <dataEntry offset="1535" parentId="globals" symbolId="MainView" type="class"/>
+        <dataEntry offset="1718" parentId="globals" symbolId="RouteViewBehaviorDelegate" type="class"/>
+        <dataEntry offset="1765" parentId="globals" symbolId="MainViewBehaviorDelegate" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="initialize" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setCoords" parent="RouteView">
+            <param id="coords"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setUserPosition" parent="RouteView">
+            <param id="currentIndex"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="RouteView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="RouteView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="moveUp" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="moveDown" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="moveLeft" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="moveRight" parent="RouteView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="zoom" parent="RouteView">
+            <param id="zoomMode"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MyPoint">
+            <param id="pos"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="NavApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="NavApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="NavApp">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="getInitialView" parent="NavApp">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="messageReceived" parent="NavApp">
+            <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setConversionRatio" parent="NavApp">
+            <param id="topLeft"/>
+            <param id="bottomRight"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="parse" parent="NavApp">
+            <param id="routePoints"/>
+            <param id="topLeft"/>
+            <param id="bottomRight"/>
+            <param id="latLongToPixels"/>
+            <param id="velikost"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="parseRouteSteps" parent="NavApp">
+            <param id="receivedMessage"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="parseWayPoints" parent="NavApp">
+            <param id="receivedMessage"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="latlngToGlobalXY" parent="NavApp">
+            <param id="lat"/>
+            <param id="lng"/>
+            <param id="p0"/>
+            <param id="p1"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="latlngToScreenXY" parent="NavApp">
+            <param id="lat"/>
+            <param id="lng"/>
+            <param id="p0"/>
+            <param id="p1"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="zoomLatlngToScreenXY" parent="NavApp">
+            <param id="lat"/>
+            <param id="lng"/>
+            <param id="p0"/>
+            <param id="p1"/>
+            <param id="zoom"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="calculateZoom" parent="NavApp">
+            <param id="zoom"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setCurrentPosition" parent="NavApp">
+            <param id="posInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="distanceBetweenTwoPoints" parent="NavApp">
+            <param id="startPoint"/>
+            <param id="endPoint"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="deg2rad" parent="NavApp">
+            <param id="deg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="rad2deg" parent="NavApp">
+            <param id="rad"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MyReferencePoint">
+            <param id="scrX"/>
+            <param id="scrY"/>
+            <param id="lat"/>
+            <param id="lon"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setGlobalXY" parent="MyReferencePoint">
+            <param id="position"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MainViewBehaviorDelegate">
+            <param id="mainView"/>
+            <param id="routeView"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onNextPage" parent="MainViewBehaviorDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPreviousPage" parent="MainViewBehaviorDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onTap" parent="MainViewBehaviorDelegate">
+            <param id="clickEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onSwipe" parent="MainViewBehaviorDelegate">
+            <param id="swipeEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onMenu" parent="MainViewBehaviorDelegate">
+            <param id="swipeEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="RouteStep">
+            <param id="passed"/>
+            <param id="ins"/>
+            <param id="type"/>
+            <param id="start"/>
+            <param id="end"/>
+            <param id="sWayPoint"/>
+            <param id="fWayPoint"/>
+            <param id="dist"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="RouteViewBehaviorDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setRouteSteps" parent="MainView">
+            <param id="routeSteps"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="setRoutePoints" parent="MainView">
+            <param id="routePoints"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPosition" parent="MainView">
+            <param id="posInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="startNavigate" parent="MainView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MainView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="MainView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="MainView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="MainView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="MainView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MyConnectionListener">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="background">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="draw" parent="background">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="MainMenu">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

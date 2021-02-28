@@ -42,15 +42,7 @@ class RouteView extends WatchUi.View {
     
     function onUpdate(dc){
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-        dc.clear();
-         
-        
-        /*dc.drawLine(55, 0,55, 218);
-        dc.drawLine(165, 0,165, 218);
-        
-        dc.drawLine(0, 55, 218, 55);
-        dc.drawLine(0, 165, 218, 165);*/
-                
+        dc.clear();      
         dc.drawBitmap(18, 100, WatchUi.loadResource(Rez.Drawables.leftArrow));
         dc.drawBitmap(182, 100, WatchUi.loadResource(Rez.Drawables.rightArrow));
         dc.drawBitmap(98, 18, WatchUi.loadResource(Rez.Drawables.upArrow));
@@ -111,9 +103,10 @@ class RouteView extends WatchUi.View {
     }
     
     function moveRight(){
+        System.println(Application.getApp().dataCounter);
         if(coordinates != null){
             xOffset += 3 * (zoomLevel * 1.8);
-            System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
+            //System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	    for(var i = 0; i < coordinates.size(); i++){
     		    coordinates[i][0] += 3 * (zoomLevel * 1.8);
     	    }
