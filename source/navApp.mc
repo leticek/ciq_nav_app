@@ -10,7 +10,7 @@ class NavApp extends Application.AppBase {
 	hidden var routeView;
     hidden var mainView;
 	hidden var loadView;
-	hidden var mainViewBehaviorDelegate;
+	hidden var mainBehaviorDelegate;
 
 	hidden var userPosition;
 	hidden var ratioConvert = true; 
@@ -22,12 +22,19 @@ class NavApp extends Application.AppBase {
 	hidden var radius = 6371;
 	hidden var topLeft;
 	hidden var bottomRight;
+	
+	hidden var isFirstPosition = true;
+	hidden var currStep = 0;
+	hidden var lastKnownPosition;
+
+
+
+	var canStartNavigation = false;
 	var dataCounter = 0;
 	var gpsReady = false;
 	
     function initialize() {
         AppBase.initialize();
-        Communications.registerForPhoneAppMessages(method(:messageReceived));
     }
 
     // onStart() is called on application start up
@@ -35,9 +42,14 @@ class NavApp extends Application.AppBase {
 		self.routeView = new RouteView();
         self.mainView = new MainView();
 		self.loadView = new LoadView();
-		//Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
-		self.mainViewBehaviorDelegate = new MainViewBehaviorDelegate(self.mainView, self.routeView);
+		Communications.registerForPhoneAppMessages(method(:messageReceived));
+		Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
+		self.mainBehaviorDelegate = new MainBehaviorDelegate(self.mainView, self.routeView);
     }
+
+	function startNavigation(){
+		WatchUi.switchToView(self.mainView, self.mainBehaviorDelegate, WatchUi.SLIDE_BLINK);
+	}
     
     // onStop() is called when your application is exiting
     function onStop(state) {
@@ -45,15 +57,90 @@ class NavApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [self.loadView];
-		//return [self.mainView, self.mainViewBehaviorDelegate];
+        return [self.loadView, new LoadViewBehaviorDelegate()];
+		//return [self.mainView, self.mainBehaviorDelegate];
     }
+
+	function onPosition(posInfo){
+		if(!gpsReady){
+			gpsReady = true;
+			self.loadView.requestUpdate();
+		}
+		if(dataCounter == 3){
+			try{
+				setCurrentPosition(posInfo.position);
+				var currPosition = posInfo.position;
+				if(isFirstPosition){
+					System.println("routeStep access");
+					self.mainView.distance = routeSteps[currStep].distance;
+					System.println("routeStep access -- ok");
+					lastKnownPosition = currPosition;
+					isFirstPosition = false;
+				} 
+				else{
+					var traveledDistance = distanceBetweenTwoPoints(lastKnownPosition, currPosition);
+					self.mainView.totalDistance += traveledDistance;
+					var currDistance = self.mainView.distance - traveledDistance;
+					if(currDistance < 4){
+						if(currStep < routeSteps.size() - 1){
+							currStep += 1;
+							currDistance = routeSteps[currStep].distance;
+						}	
+					}
+					lastKnownPosition = currPosition;
+					self.mainView.distance = currDistance;
+				}
+				switch(routeSteps[currStep].instructionType){
+					case 0:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.left);
+						break;
+					case 1:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.right);
+						break;
+					case 2:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.sharpLeft);
+						break;
+					case 3:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.sharpRight);
+						break;
+					case 4:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.slightLeft);
+						break;
+					case 5:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.slightRight);
+						break;
+					case 6:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.straight);
+						break;
+					case 9:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.uTurn);
+						break;
+					case 10:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.goal);
+						break;
+					case 11:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.depart);
+						break;
+					default:
+						self.mainView.directionImage = WatchUi.loadResource(Rez.Drawables.depart);
+						break;
+				}
+				self.mainView.instruction = routeSteps[currStep].stepInstruction;
+				Communications.transmit(currPosition.toDegrees(), null, new PhoneConnectionListener());
+				self.mainView.requestUpdate();
+			}
+			catch(ex){
+				System.println(ex.getErrorMessage());
+			}
+		}
+	}
+
 
     function messageReceived(message){
 		if(message.data["type"].toString().equals("routeSteps")){
 			try{
 				routeSteps = parseRouteSteps(message);
-				self.mainView.setRouteSteps(routeSteps);
+				//self.mainView.setRouteSteps(routeSteps);
 				self.dataCounter += 1;
 				self.loadView.requestUpdate();
 				System.println("routeSteps parsed");
@@ -66,7 +153,7 @@ class NavApp extends Application.AppBase {
 		if(message.data["type"].toString().equals("routePoints")){
 			try{
 				routePoints = parseWayPoints(message);
-				self.mainView.setRoutePoints(routePoints);
+				//self.mainView.setRoutePoints(routePoints);
 				self.dataCounter += 1;
 				self.loadView.requestUpdate();
 				System.println("routePoints parsed");

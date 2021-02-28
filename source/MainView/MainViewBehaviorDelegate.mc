@@ -1,6 +1,6 @@
 using Toybox.WatchUi;
 
-class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
+class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
 
 	hidden var currentScreen = 0;
 	hidden var routeView;
@@ -18,7 +18,7 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
     	if(currentScreen == 0){
 			currentScreen = 1;
     		Toybox.WatchUi.switchToView(self.routeView, self, SLIDE_DOWN);    		    	
-    		}
+    	}
     	return true;
     }
     
@@ -26,7 +26,7 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
     	System.print("swipe down");
     	if(currentScreen == 1){
     		currentScreen = 0;
-    		Toybox.WatchUi.switchToView(self.mainView, self, SLIDE_DOWN);
+    		Toybox.WatchUi.switchToView(self.mainView, self, SLIDE_UP);
     	}
     	return true;
     } 
@@ -60,7 +60,6 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
         	else{
         		self.routeView.zoom(zoomMode);
         	}
-        
        	}
         return true;
     }
@@ -75,6 +74,4 @@ class MainViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
     function onMenu(swipeEvent){
     	
     }
-    
-    
 }

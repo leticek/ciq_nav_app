@@ -30,6 +30,11 @@ class LoadView extends WatchUi.View {
         else{
             dc.drawText(110, 155, 10, "GPS připravena", Graphics.TEXT_JUSTIFY_CENTER);
         }
+        if(Application.getApp().gpsReady && Application.getApp().dataCounter == 3){
+            Application.getApp().canStartNavigation = true;
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_WHITE);
+            dc.fillCircle(195, 60, 15);
+        }
         //View.onUpdate(dc);
     }
 

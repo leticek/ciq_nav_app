@@ -10,107 +10,13 @@ using Toybox.Time.Gregorian as Calendar;
 
 class MainView extends WatchUi.View {
 
-	hidden var routeStepList;
-	hidden var routePointsList;
-	hidden var instruction = "-";
-	hidden var currStep = 0;
-	hidden var lastKnownPosition;
-	hidden var distance = 0;
-	hidden var isFirst = true;
-	hidden var directionImage = null;
-	hidden var totalDistance = 0;
+	var directionImage = null;
+	var instruction = "-";
+	var totalDistance = 0;
+	var distance = 0;
 	
-	function setRouteSteps(routeSteps){
-		self.routeStepList = routeSteps;
-	}
-	
-	function setRoutePoints(routePoints){
-		self.routePointsList = routePoints;
-	}
-	
-	function onPosition(posInfo){
-		var now = Time.now();
-		var time = Calendar.info(now, Time.FORMAT_SHORT);
-		var str = time.hour + ":" + time.min + ":" + time.sec;
-		System.println(str);
-		var tmp = posInfo.position;
-		Application.getApp().setCurrentPosition(posInfo.position);
-		try{
-			var currPosition = posInfo.position;
-			if(isFirst){
-				System.println("routeStepList access");
-				distance = routeStepList[currStep].distance;
-				System.println("routeStepList access -- ok");
-				lastKnownPosition = currPosition;
-				isFirst = false;
-			} 
-			else{
-				var traveledDistance = Application.getApp().distanceBetweenTwoPoints(lastKnownPosition, currPosition);
-				totalDistance += traveledDistance;
-				var currDistance = distance - traveledDistance;
-				System.println(currDistance);
-				if(currDistance < 4){
-					System.println(currStep);
-					if(currStep < routeStepList.size() - 1){
-						currStep += 1;
-						currDistance = routeStepList[currStep].distance;
-					}
-				}
-				lastKnownPosition = currPosition;
-				distance = currDistance;
-			}
-			System.println(routeStepList[currStep].instructionType);
-			switch(routeStepList[currStep].instructionType){
-				case 0:
-					directionImage = WatchUi.loadResource(Rez.Drawables.left);
-					break;
-				case 1:
-					directionImage = WatchUi.loadResource(Rez.Drawables.right);
-					break;
-				case 2:
-					directionImage = WatchUi.loadResource(Rez.Drawables.sharpLeft);
-					break;
-				case 3:
-					directionImage = WatchUi.loadResource(Rez.Drawables.sharpRight);
-					break;
-				case 4:
-					directionImage = WatchUi.loadResource(Rez.Drawables.slightLeft);
-					break;
-				case 5:
-					directionImage = WatchUi.loadResource(Rez.Drawables.slightRight);
-					break;
-				case 6:
-					directionImage = WatchUi.loadResource(Rez.Drawables.straight);
-					break;
-				case 9:
-					directionImage = WatchUi.loadResource(Rez.Drawables.uTurn);
-					break;
-				case 10:
-					directionImage = WatchUi.loadResource(Rez.Drawables.goal);
-					break;
-				case 11:
-					directionImage = WatchUi.loadResource(Rez.Drawables.depart);
-					break;
-				default:
-					directionImage = WatchUi.loadResource(Rez.Drawables.depart);
-					break;
-			}
-			instruction = routeStepList[currStep].stepInstruction;
-			Communications.transmit(currPosition.toDegrees(), null, new MyConnectionListener());
-			WatchUi.requestUpdate();
-		}
-		catch(ex){
-			System.println(ex.getErrorMessage());
-		}
-	}
-	
-	function startNavigate(){
-		Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
-	}
-
     function initialize() {
         View.initialize();
-    	//startNavigate();
         System.println("main init");
     }
 
@@ -144,14 +50,3 @@ class MainView extends WatchUi.View {
     	System.println("main hide");
     }
 }
-
-
-class MyConnectionListener extends Communications.ConnectionListener{
-	function initialize(){
-		ConnectionListener.initialize();
-	}
-
-}
-	
-
-
