@@ -6,11 +6,11 @@ class PhoneConnectionListener extends Communications.ConnectionListener{
 	}
 
     function onComplete(){
-        System.println("Message OK");
+        //System.println("Message OK");
     }
 
     function onError(){
-        System.println("Message ERROR");
+        //System.println("Message ERROR");
     }
 
 

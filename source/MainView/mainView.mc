@@ -32,16 +32,42 @@ class MainView extends WatchUi.View {
     }
 
     // Update the view
+    (:vivoactive4s)
     function onUpdate(dc) {
   		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     	dc.clear();
     	if(directionImage != null){
-    		dc.drawBitmap(dc.getWidth() / 2.5, 30, directionImage);
+    		dc.drawBitmap(87, 30, directionImage);
     	}
-    	dc.drawText(dc.getWidth() / 2, 120, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
-    	dc.drawText(dc.getWidth() / 1.88, 160, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
-    	dc.drawText(dc.getWidth() / 1.88, 190, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
+    	dc.drawText(109, 120, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
+    	dc.drawText(116, 160, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
+    	dc.drawText(116, 190, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
     }
+
+    (:venusq)
+    function onUpdate(dc) {
+  		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    	dc.clear();
+    	if(directionImage != null){
+    		dc.drawBitmap(96, 45, directionImage);
+    	}
+    	dc.drawText(120, 130, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
+    	dc.drawText(128, 170, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
+    	dc.drawText(128, 200, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
+    }
+
+    (:fr645m)
+    function onUpdate(dc) {
+  		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    	dc.clear();
+    	if(directionImage != null){
+    		dc.drawBitmap(100, 30, directionImage);
+    	}
+    	dc.drawText(120, 120, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
+    	dc.drawText(125, 160, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
+    	dc.drawText(120, 190, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
+    }
+    
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from

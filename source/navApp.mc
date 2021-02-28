@@ -175,8 +175,8 @@ class NavApp extends Application.AppBase {
         											 :longitude => message.data["data"][2],
         											 :format => :degrees});
             	latLongToPixels = new [routePoints.size()];
-            	topLeft = new MyReferencePoint(26, 36, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
-            	bottomRight = new MyReferencePoint(191, 181, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
+            	topLeft = new MyReferencePoint(0, 0, boundingBox[1].toDegrees()[0],  boundingBox[1].toDegrees()[1]);
+            	bottomRight = new MyReferencePoint(System.getDeviceSettings().screenWidth, System.getDeviceSettings().screenHeight, boundingBox[0].toDegrees()[0],  boundingBox[0].toDegrees()[1]);
             	topLeft.setGlobalXY(latlngToGlobalXY(topLeft.latitude, topLeft.longitude, topLeft, bottomRight));
             	bottomRight.setGlobalXY(latlngToGlobalXY(bottomRight.latitude, bottomRight.longitude, topLeft, bottomRight));                       
 				setConversionRatio(topLeft, bottomRight);
@@ -248,29 +248,29 @@ class NavApp extends Application.AppBase {
 	
 	function latlngToScreenXY(lat, lng, p0, p1){
     	var pos = new MyPoint(latlngToGlobalXY(lat, lng, p0, p1));
-    	pos.percentageX = ((165) / (p1.globalXY[0] - p0.globalXY[0]));
-    	pos.percentageY = ((145) / (p1.globalXY[1] - p0.globalXY[1]));
+    	pos.percentageX = ((System.getDeviceSettings().screenWidth) / (p1.globalXY[0] - p0.globalXY[0]));
+    	pos.percentageY = ((System.getDeviceSettings().screenHeight) / (p1.globalXY[1] - p0.globalXY[1]));
 		if(ratioConvert){
-    		return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageX),
-					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageX)];
+    		return [System.getDeviceSettings().screenWidth - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageX),
+					System.getDeviceSettings().screenHeight - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageX)];
 		}
 		else{
-			return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageY),
-					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageY)];
+			return [System.getDeviceSettings().screenWidth - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * pos.percentageY),
+					System.getDeviceSettings().screenHeight - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * pos.percentageY)];
 		}
 	}
 	
 	function zoomLatlngToScreenXY(lat, lng, p0, p1, zoom){
     	var pos = new MyPoint(latlngToGlobalXY(lat, lng, p0, p1));
-    	pos.percentageX = ((165) / (p1.globalXY[0] - p0.globalXY[0]));
-    	pos.percentageY = ((145) / (p1.globalXY[1] - p0.globalXY[1]));
+    	pos.percentageX = ((System.getDeviceSettings().screenWidth) / (p1.globalXY[0] - p0.globalXY[0]));
+    	pos.percentageY = ((System.getDeviceSettings().screenHeight) / (p1.globalXY[1] - p0.globalXY[1]));
 		if(ratioConvert){
-    		return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageX * zoom)),
-					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageX * zoom))];
+    		return [System.getDeviceSettings().screenWidth - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageX * zoom)),
+					System.getDeviceSettings().screenHeight - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageX * zoom))];
 		}
 		else{
-			return [218 - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageY * zoom)),
-					218 - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageY * zoom))];
+			return [System.getDeviceSettings().screenWidth - (p0.screenX + (pos.position[0] - p0.globalXY[0]) * (pos.percentageY * zoom)),
+					System.getDeviceSettings().screenHeight - (p0.screenY + (p1.globalXY[1] - pos.position[1]) * (pos.percentageY * zoom))];
 		}
 	}
 	

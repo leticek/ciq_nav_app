@@ -13,4 +13,9 @@ class LoadViewBehaviorDelegate extends WatchUi.BehaviorDelegate {
         }
         return true;
     }
+
+    function onBack(){
+		System.exit();
+		return true;
+	}
 }

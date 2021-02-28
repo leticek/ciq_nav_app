@@ -1,2 +1,4 @@
 project.manifest = manifest.xml
-fenix5plus.excludeAnnotations = older
+venusq.excludeAnnotations = vivoactive4s;fr645m
+fr645m.excludeAnnotations = venusq;vivoactive4s;touchScreen
+vivoactive4s.excludeAnnotations = venusq;fr645m

@@ -15,8 +15,6 @@
     <bitmap id="rightArrow" filename="./right-arrow.png"/>
     <bitmap id="upArrow" filename="./up-arrow.png"/>
     <bitmap id="downArrow" filename="./down-arrow.png"/>
-    
-    <drawable-list id="background">
-	<shape type="rectangle" x="0" y="0" width="fill" height="fill" color="Graphics.COLOR_WHITE" />
-	</drawable-list>¨
+    <bitmap id="plus" filename="./plus.png"/>
+    <bitmap id="minus" filename="./minus.png"/>
 </drawables>
