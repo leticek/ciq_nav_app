@@ -27,7 +27,7 @@ class NavApp extends Application.AppBase {
 	hidden var currStep = 0;
 	hidden var lastKnownPosition;
 
-
+	hidden var pointClosestToCenter = [];
 
 	var canStartNavigation = false;
 	var dataCounter = 0;
@@ -126,7 +126,7 @@ class NavApp extends Application.AppBase {
 						break;
 				}
 				self.mainView.instruction = routeSteps[currStep].stepInstruction;
-				Communications.transmit(currPosition.toDegrees(), null, new PhoneConnectionListener());
+				Communications.transmit({"type" => 3, "data" => currPosition.toDegrees()}, null, new PhoneConnectionListener());
 				self.mainView.requestUpdate();
 			}
 			catch(ex){
@@ -140,12 +140,13 @@ class NavApp extends Application.AppBase {
 		if(message.data["type"].toString().equals("routeSteps")){
 			try{
 				routeSteps = parseRouteSteps(message);
-				//self.mainView.setRouteSteps(routeSteps);
+				Communications.transmit({"type" => 0, "status" => 1}, null, new PhoneConnectionListener());
 				self.dataCounter += 1;
 				self.loadView.requestUpdate();
 				System.println("routeSteps parsed");
 			}
 			catch(ex){
+			Communications.transmit({"type" => 0, "status" => 0}, null, new PhoneConnectionListener());
 				System.println("routeSteps exc");
 				System.println(ex.getErrorMessage());
 			}	
@@ -153,12 +154,13 @@ class NavApp extends Application.AppBase {
 		if(message.data["type"].toString().equals("routePoints")){
 			try{
 				routePoints = parseWayPoints(message);
-				//self.mainView.setRoutePoints(routePoints);
+				Communications.transmit({"type" => 1, "status" => 1}, null, new PhoneConnectionListener());
 				self.dataCounter += 1;
 				self.loadView.requestUpdate();
 				System.println("routePoints parsed");
 			}
 			catch(ex){
+			Communications.transmit({"type" => 1, "status" => 0}, null, new PhoneConnectionListener());
 				System.println("routePoints exc");
 				System.println(ex.getErrorMessage());
 			}
@@ -180,15 +182,30 @@ class NavApp extends Application.AppBase {
             	topLeft.setGlobalXY(latlngToGlobalXY(topLeft.latitude, topLeft.longitude, topLeft, bottomRight));
             	bottomRight.setGlobalXY(latlngToGlobalXY(bottomRight.latitude, bottomRight.longitude, topLeft, bottomRight));                       
 				setConversionRatio(topLeft, bottomRight);
-            	parse(routePoints, topLeft, bottomRight, latLongToPixels, latLongToPixels.size());
+            	convertLatLngToPixels(routePoints, topLeft, bottomRight, latLongToPixels);
+				Communications.transmit({"type" => 2, "status" => 1}, null, new PhoneConnectionListener());
             	self.routeView.setCoords(latLongToPixels);
 				self.dataCounter += 1;
 				self.loadView.requestUpdate();
             	System.println("converted");
 			}
 			catch(ex){
+				Communications.transmit({"type" => 2, "status" => 0}, null, new PhoneConnectionListener());
 				System.println("boundingBox exc");
 				System.println(ex.getErrorMessage());
+			}
+		}
+	}
+
+	function findClosestCenterPoint(){
+		var centerPoint = [System.getDeviceSettings().screenWidth / 2, System.getDeviceSettings().screenHeight / 2];
+		var distance = 1000;
+		var currentDistance;
+		for(var i = 0; i < latLongToPixels.size(); i++){
+			currentDistance = Math.sqrt((Math.pow((centerPoint[0] - latLongToPixels[i][0]), 2) + Math.pow((centerPoint[1] - latLongToPixels[i][1]), 2))); 
+			if(distance > currentDistance){
+				distance = currentDistance;
+				pointClosestToCenter = latLongToPixels[i];
 			}
 		}
 	}
@@ -202,8 +219,8 @@ class NavApp extends Application.AppBase {
 		}
 	}
 	
-	function parse(routePoints, topLeft, bottomRight, latLongToPixels, velikost){
-		for(var i = 0; i < velikost; i++){
+	function convertLatLngToPixels(routePoints, topLeft, bottomRight, latLongToPixels){
+		for(var i = 0; i < latLongToPixels.size(); i++){
             latLongToPixels[i] = latlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight);   
 		}
 	}
@@ -211,20 +228,11 @@ class NavApp extends Application.AppBase {
 	function parseRouteSteps(receivedMessage){
 		var parsedRouteSteps = new [receivedMessage.data["data"].size()];
 		for(var i = 0; i < parsedRouteSteps.size(); i++){ 
-			parsedRouteSteps[i] = new RouteStep(receivedMessage.data["data"][i]["passed"],
+			parsedRouteSteps[i] = new RouteStep(
 											receivedMessage.data["data"][i]["instruction"],
 											receivedMessage.data["data"][i]["type"],
-											new Position.Location({
-												:latitude => receivedMessage.data["data"][i]["startPoint"]["latitude"],
-        										:longitude => receivedMessage.data["data"][i]["startPoint"]["longitude"],
-        										:format => :degrees}),
-											new Position.Location({
-												:latitude => receivedMessage.data["data"][i]["endPoint"]["latitude"],
-        										:longitude => receivedMessage.data["data"][i]["endPoint"]["longitude"],
-        										:format => :degrees}), 
-        									receivedMessage.data["data"][i]["startWayPoint"],
-        									receivedMessage.data["data"][i]["finishWayPoint"],
-        									receivedMessage.data["data"][i]["distance"]);
+        									receivedMessage.data["data"][i]["distance"]
+											);
 			}
 		return parsedRouteSteps;
 	}
@@ -275,12 +283,22 @@ class NavApp extends Application.AppBase {
 	}
 	
 	function calculateZoom(zoom){
+		System.println("Zoom: " + zoom);
 		if(latLongToPixels != null && latLongToPixels.size() > 0){
 			for(var i = 0; i < latLongToPixels.size(); i++){
-            	latLongToPixels[i] = zoomLatlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight, zoom);
+            	latLongToPixels[i] = zoomLatlngToScreenXY(routePoints[i].toDegrees()[0], routePoints[i].toDegrees()[1], topLeft, bottomRight, zoom);    	
 			}
 			self.routeView.setCoords(latLongToPixels);
+			//findClosestCenterPoint();
 		}
+	}
+	
+	function fixZoom(point, zoom){
+	
+		var dx = 109 - (109 * zoom);
+		var dy = 109 - (109 * zoom);
+		
+		return [point[0] * zoom + dx, point[1] * zoom  + dy];
 	}
 	
 	function setCurrentPosition(posInfo){
@@ -294,6 +312,7 @@ class NavApp extends Application.AppBase {
 				currentIndex = i;
 			}
 		}
+		 
 		self.routeView.setUserPosition(currentIndex);
 	}
 

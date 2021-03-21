@@ -7,10 +7,7 @@ class RouteView extends WatchUi.View {
 
     hidden var coordinates;
     hidden var zoomLevel = 0.8;
-    hidden var xOffset = 0;
-    hidden var yOffset = 0;
     hidden var isFirst = true;
-    hidden var originalPos;
     hidden var userPosition;
     
     var currentMode = 0;
@@ -22,7 +19,6 @@ class RouteView extends WatchUi.View {
 
     function setCoords(coords){
         if(isFirst){
-            self.originalPos = coords[0];
             isFirst = false;
         }
         self.coordinates = coords;
@@ -132,10 +128,8 @@ class RouteView extends WatchUi.View {
     
     function moveUp(){
         if(coordinates != null){    
-            yOffset -= 3 * (zoomLevel * 1.8);
-            //System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	    for(var i = 0; i < coordinates.size(); i++){
-    		    coordinates[i][1] -= 3 * (zoomLevel * 1.8);
+    		    coordinates[i][1] -= 3 * (zoomLevel * 2);
     	    }
     	    self.requestUpdate();
         }
@@ -143,10 +137,8 @@ class RouteView extends WatchUi.View {
     
     function moveDown(){
         if(coordinates != null){
-            yOffset += 3 * (zoomLevel * 1.8);
-            //System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	    for(var i = 0; i < coordinates.size(); i++){
-    		    coordinates[i][1] += 3 * (zoomLevel * 1.8);
+    		    coordinates[i][1] += 3 * (zoomLevel * 2);
     	    }
     	    self.requestUpdate();
         }
@@ -154,10 +146,8 @@ class RouteView extends WatchUi.View {
     
     function moveLeft(){
         if(coordinates != null){
-            xOffset -= 3 * (zoomLevel * 1.8);
-            //System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	    for(var i = 0; i < coordinates.size(); i++){
-    		    coordinates[i][0] -= 3 * (zoomLevel * 1.8);
+    		    coordinates[i][0] -= 3 * (zoomLevel * 2);
     	    }
     	    self.requestUpdate();
         }
@@ -166,10 +156,8 @@ class RouteView extends WatchUi.View {
     function moveRight(){
         System.println(Application.getApp().dataCounter);
         if(coordinates != null){
-            xOffset += 3 * (zoomLevel * 1.8);
-            //System.println("xOffset: " + xOffset + " yOffset: " + yOffset);
     	    for(var i = 0; i < coordinates.size(); i++){
-    		    coordinates[i][0] += 3 * (zoomLevel * 1.8);
+    		    coordinates[i][0] += 3 * (zoomLevel * 2);
     	    }
     	    self.requestUpdate();
         }
@@ -178,11 +166,11 @@ class RouteView extends WatchUi.View {
     function zoom(zoomMode){
     	if(coordinates != null){
     		if(zoomMode){
-    			zoomLevel += 0.2;
+    			zoomLevel += 0.1;
     			Application.getApp().calculateZoom(zoomLevel);
     		}
     		else{
-    			zoomLevel -= 0.2;
+    			zoomLevel -= 0.1;
     			Application.getApp().calculateZoom(zoomLevel);
     		}
     	}
