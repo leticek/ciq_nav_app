@@ -16,7 +16,7 @@ class LoadView extends WatchUi.View {
     }
 
     // onUpdate() is called periodically to update the View
-    (:vivoactive4s)
+    (:round218)
     function onUpdate(dc) {
         View.onUpdate(dc);
         System.println("loadView update");
@@ -39,7 +39,77 @@ class LoadView extends WatchUi.View {
         }
     }
 
-    (:venusq)
+    (:round240)
+    function onUpdate(dc) {
+        View.onUpdate(dc);
+        System.println("loadView update");
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();  
+        dc.drawText(120, 65, 10, "Nahrajte trasu z telefonu", Graphics.TEXT_JUSTIFY_CENTER);
+        for(var i = 0; i < Application.getApp().dataCounter; i++){
+            dc.fillCircle(75 + (i * 45), 125, 15);
+        }
+        if(!Application.getApp().gpsReady){
+            dc.drawText(115, 170, 10, "Čekám na GPS", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        else{
+            dc.drawText(115, 170, 10, "GPS připravena", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        if(Application.getApp().gpsReady && Application.getApp().dataCounter == 3){
+            Application.getApp().canStartNavigation = true;
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_WHITE);
+            dc.fillCircle(215, 65, 15);
+        }
+    }
+
+    (:round260)
+    function onUpdate(dc) {
+        View.onUpdate(dc);
+        System.println("loadView update");
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();  
+        dc.drawText(130, 70, 10, "Nahrajte trasu z telefonu", Graphics.TEXT_JUSTIFY_CENTER);
+        for(var i = 0; i < Application.getApp().dataCounter; i++){
+            dc.fillCircle(81 + (i * 29), 135, 17);
+            
+        }
+        if(!Application.getApp().gpsReady){
+            dc.drawText(125, 185, 10, "Čekám na GPS", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        else{
+            dc.drawText(125, 185, 10, "GPS připravena", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        if(Application.getApp().gpsReady && Application.getApp().dataCounter == 3){
+            Application.getApp().canStartNavigation = true;
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_WHITE);
+            dc.fillCircle(215, 65, 15);
+        }
+    }
+
+    (:round280)
+    function onUpdate(dc) {
+        View.onUpdate(dc);
+        System.println("loadView update");
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();  
+        dc.drawText(140, 75, 10, "Nahrajte trasu z telefonu", Graphics.TEXT_JUSTIFY_CENTER);
+        for(var i = 0; i < Application.getApp().dataCounter; i++){
+            dc.fillCircle(88 + (i * 53), 145, 15);
+        }
+        if(!Application.getApp().gpsReady){
+            dc.drawText(135, 198, 10, "Čekám na GPS", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        else{
+            dc.drawText(135, 198, 10, "GPS připravena", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        if(Application.getApp().gpsReady && Application.getApp().dataCounter == 3){
+            Application.getApp().canStartNavigation = true;
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_WHITE);
+            dc.fillCircle(215, 65, 15);
+        }
+    }
+
+    (:rectangle240)
     function onUpdate(dc) {
         View.onUpdate(dc);
         System.println("loadView update");
@@ -62,28 +132,6 @@ class LoadView extends WatchUi.View {
         }
     }
 
-    (:fr645m)
-    function onUpdate(dc) {
-        View.onUpdate(dc);
-        System.println("loadView update");
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-        dc.clear();  
-        dc.drawText(120, 65, 10, "Nahrajte trasu z telefonu", Graphics.TEXT_JUSTIFY_CENTER);
-        for(var i = 0; i < Application.getApp().dataCounter; i++){
-            dc.fillCircle(75 + (i * 45), 125, 15);
-        }
-        if(!Application.getApp().gpsReady){
-            dc.drawText(115, 170, 10, "Čekám na GPS", Graphics.TEXT_JUSTIFY_CENTER);
-        }
-        else{
-            dc.drawText(115, 170, 10, "GPS připravena", Graphics.TEXT_JUSTIFY_CENTER);
-        }
-        if(Application.getApp().gpsReady && Application.getApp().dataCounter == 3){
-            Application.getApp().canStartNavigation = true;
-            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_WHITE);
-            dc.fillCircle(215, 65, 15);
-        }
-    }
 
     // onHide() is called when this View is removed from the screen
     function onHide() {

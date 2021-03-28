@@ -32,7 +32,7 @@ class MainView extends WatchUi.View {
     }
 
     // Update the view
-    (:vivoactive4s)
+    (:round218)
     function onUpdate(dc) {
   		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     	dc.clear();
@@ -44,19 +44,8 @@ class MainView extends WatchUi.View {
     	dc.drawText(116, 190, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
     }
 
-    (:venusq)
-    function onUpdate(dc) {
-  		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-    	dc.clear();
-    	if(directionImage != null){
-    		dc.drawBitmap(96, 45, directionImage);
-    	}
-    	dc.drawText(120, 130, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
-    	dc.drawText(128, 170, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
-    	dc.drawText(128, 200, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
-    }
 
-    (:fr645m)
+    (:round240)
     function onUpdate(dc) {
   		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     	dc.clear();
@@ -67,7 +56,42 @@ class MainView extends WatchUi.View {
     	dc.drawText(125, 160, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
     	dc.drawText(120, 190, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
     }
+
+	(:round260)
+    function onUpdate(dc) {
+  		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    	dc.clear();
+    	if(directionImage != null){
+    		dc.drawBitmap(108, 32, directionImage);
+    	}
+    	dc.drawText(130, 130, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
+    	dc.drawText(135, 173, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
+    	dc.drawText(130, 205, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
+    }
+
+	(:round280)
+    function onUpdate(dc) {
+  		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    	dc.clear();
+    	if(directionImage != null){
+    		dc.drawBitmap(116, 35, directionImage);
+    	}
+    	dc.drawText(140, 140, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
+    	dc.drawText(145, 186, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
+    	dc.drawText(140, 221, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
+    }
     
+    (:rectangle240)
+    function onUpdate(dc) {
+  		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    	dc.clear();
+    	if(directionImage != null){
+    		dc.drawBitmap(96, 45, directionImage);
+    	}
+    	dc.drawText(120, 130, 9, instruction , Graphics.TEXT_JUSTIFY_CENTER);
+    	dc.drawText(128, 170, 10, "Distance: " + distance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);  
+    	dc.drawText(128, 200, 9, "Total: " + totalDistance.toNumber() +"m", Graphics.TEXT_JUSTIFY_CENTER);   
+    }
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from

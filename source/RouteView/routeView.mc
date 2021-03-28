@@ -38,7 +38,7 @@ class RouteView extends WatchUi.View {
         WatchUi.requestUpdate();
     }
     
-    (:vivoactive4s)
+    (:round218:touch)
     function onUpdate(dc){
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();      
@@ -63,7 +63,32 @@ class RouteView extends WatchUi.View {
         }
     }
 
-    (:venusq)
+    (:round260:touch)
+    function onUpdate(dc){
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();      
+        dc.drawBitmap(21, 119, WatchUi.loadResource(Rez.Drawables.leftArrow));
+        dc.drawBitmap(217, 119, WatchUi.loadResource(Rez.Drawables.rightArrow));
+        dc.drawBitmap(116, 21, WatchUi.loadResource(Rez.Drawables.upArrow));
+        dc.drawBitmap(116, 217, WatchUi.loadResource(Rez.Drawables.downArrow));
+        if(coordinates instanceof Array && coordinates != null){
+            for(var i = 0; i < coordinates.size(); i++){
+                if(userPosition == i){
+                    dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_WHITE); 
+        	        dc.fillRoundedRectangle(coordinates[i][0], coordinates[i][1], 5, 5, 3);
+                    dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+                }
+                else{
+                    dc.fillRoundedRectangle(coordinates[i][0], coordinates[i][1], 2, 2, 1.5);
+                }
+                if(i != coordinates.size() - 1){
+                    dc.drawLine(coordinates[i][0], coordinates[i][1], coordinates[i + 1][0], coordinates[i + 1][1]);
+                }
+            }
+        }
+    }
+
+    (:rectangle240)
     function onUpdate(dc){
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();      
@@ -88,7 +113,7 @@ class RouteView extends WatchUi.View {
         }
     }
 
-    (:fr645m)
+    (:round240:buttons)
     function onUpdate(dc){
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
@@ -103,6 +128,72 @@ class RouteView extends WatchUi.View {
         else if(currentMode == 3){
             dc.drawBitmap(110, 15, WatchUi.loadResource(Rez.Drawables.plus));
             dc.drawBitmap(110, 205, WatchUi.loadResource(Rez.Drawables.minus));
+        }
+        if(coordinates instanceof Array && coordinates != null){
+            for(var i = 0; i < coordinates.size(); i++){
+                if(userPosition == i){
+                    dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_WHITE); 
+        	        dc.fillRoundedRectangle(coordinates[i][0], coordinates[i][1], 5, 5, 3);
+                    dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+                }
+                else{
+                    dc.fillRoundedRectangle(coordinates[i][0], coordinates[i][1], 2, 2, 1.5);
+                }
+                if(i != coordinates.size() - 1){
+                    dc.drawLine(coordinates[i][0], coordinates[i][1], coordinates[i + 1][0], coordinates[i + 1][1]);
+                }
+            }
+        }
+    }
+
+    (:round260:buttons)
+    function onUpdate(dc){
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();
+        if(currentMode == 1){      
+            dc.drawBitmap(119, 16, WatchUi.loadResource(Rez.Drawables.upArrow));
+            dc.drawBitmap(119, 222, WatchUi.loadResource(Rez.Drawables.downArrow));
+        }
+        else if(currentMode == 2){
+            dc.drawBitmap(16, 119, WatchUi.loadResource(Rez.Drawables.leftArrow));
+            dc.drawBitmap(222, 119, WatchUi.loadResource(Rez.Drawables.rightArrow));
+        }
+        else if(currentMode == 3){
+            dc.drawBitmap(119, 16, WatchUi.loadResource(Rez.Drawables.plus));
+            dc.drawBitmap(119, 222, WatchUi.loadResource(Rez.Drawables.minus));
+        }
+        if(coordinates instanceof Array && coordinates != null){
+            for(var i = 0; i < coordinates.size(); i++){
+                if(userPosition == i){
+                    dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_WHITE); 
+        	        dc.fillRoundedRectangle(coordinates[i][0], coordinates[i][1], 5, 5, 3);
+                    dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+                }
+                else{
+                    dc.fillRoundedRectangle(coordinates[i][0], coordinates[i][1], 2, 2, 1.5);
+                }
+                if(i != coordinates.size() - 1){
+                    dc.drawLine(coordinates[i][0], coordinates[i][1], coordinates[i + 1][0], coordinates[i + 1][1]);
+                }
+            }
+        }
+    }
+
+    (:round280:buttons)
+    function onUpdate(dc){
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        dc.clear();
+        if(currentMode == 1){      
+            dc.drawBitmap(128, 18, WatchUi.loadResource(Rez.Drawables.upArrow));
+            dc.drawBitmap(128, 239, WatchUi.loadResource(Rez.Drawables.downArrow));
+        }
+        else if(currentMode == 2){
+            dc.drawBitmap(18, 128, WatchUi.loadResource(Rez.Drawables.leftArrow));
+            dc.drawBitmap(239, 128, WatchUi.loadResource(Rez.Drawables.rightArrow));
+        }
+        else if(currentMode == 3){
+            dc.drawBitmap(128, 18, WatchUi.loadResource(Rez.Drawables.plus));
+            dc.drawBitmap(128, 239, WatchUi.loadResource(Rez.Drawables.minus));
         }
         if(coordinates instanceof Array && coordinates != null){
             for(var i = 0; i < coordinates.size(); i++){

@@ -26,7 +26,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
 		return true;
 	}
 
-	(:fr645m)
+	(:buttons)
 	function onKey(keyEvent){
 		System.println(keyEvent.getKey());
 		switch(keyEvent.getKey()){
@@ -46,7 +46,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
 		}	
 	}
 
-	(:fr645m)
+	(:buttons)
 	function switchMode(){
 		if(self.routeView.currentMode < 3){
 			self.routeView.currentMode += 1;
@@ -57,7 +57,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
 		self.routeView.requestUpdate();
 	}
 
-	(:fr645m)
+	(:buttons)
 	function keyUp(){
 		switch(self.routeView.currentMode){
 			case SWITCH_VIEWS:
@@ -78,7 +78,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
 		}
 	}
 
-	(:fr645m)
+	(:buttons)
 	function keyDown(){
 		switch(self.routeView.currentMode){
 			case SWITCH_VIEWS:
@@ -100,7 +100,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
 	}
 
 
-    (:touchScreen)
+    (:touch)
     function onNextPage(){
     	System.print("swipe up");
     	if(currentScreen == 0){
@@ -110,7 +110,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
     	return true;
     }
     
-	(:touchScreen)
+	(:touch)
     function onPreviousPage(){
     	System.print("swipe down");
     	if(currentScreen == 1){
@@ -120,7 +120,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
     	return true;
     }   
     
-	(:vivoactive4s)
+	(:touch218)
     function onTap(clickEvent) {
     	if(currentScreen == 1){
     		var xTapped = clickEvent.getCoordinates()[0];
@@ -144,7 +144,7 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
-	(:venusq)
+	(:touch240)
     function onTap(clickEvent) {
     	if(currentScreen == 1){
     		var xTapped = clickEvent.getCoordinates()[0];
@@ -167,8 +167,33 @@ class MainBehaviorDelegate extends WatchUi.BehaviorDelegate {
        	}
         return true;
     }
+
+	//TODO: fix this
+	(:touch260)
+    function onTap(clickEvent) {
+    	if(currentScreen == 1){
+    		var xTapped = clickEvent.getCoordinates()[0];
+    		var yTapped = clickEvent.getCoordinates()[1];
+	        if(xTapped >= 55 && xTapped <= 165 && yTapped <= 55){
+        		self.routeView.moveUp();
+        	}
+        	else if(xTapped >= 55 && xTapped <= 165 && yTapped >= 165){
+        		self.routeView.moveDown();
+        	}
+        	else if(xTapped <= 55 && yTapped >= 55  && yTapped <= 165){
+        		self.routeView.moveLeft();
+        	}
+        	else if(xTapped >= 165 && yTapped >= 55  && yTapped <= 165){
+	        	self.routeView.moveRight();
+        	}
+        	else{
+        		self.routeView.zoom(zoomMode);
+        	}
+       	}
+        return true;
+    }
     
-	(:touchscreen)
+	(:touch)
     function onSwipe(swipeEvent){
 		if(swipeEvent.getDirection() == 3){
     		zoomMode = !zoomMode;

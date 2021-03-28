@@ -1,4 +1,40 @@
 project.manifest = manifest.xml
-venusq.excludeAnnotations = vivoactive4s;fr645m
-fr645m.excludeAnnotations = venusq;vivoactive4s;touchScreen
-vivoactive4s.excludeAnnotations = venusq;fr645m
+enduro.excludeAnnotations = round218;round240;round260;rectangle240;touch;touch218;touch240;touch260
+fenix5plus.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fenix5splus.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fenix5xplus.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fenix6.excludeAnnotations = round218;round240;round280;rectangle240;touch;touch218;touch240;touch260
+fenix6pro.excludeAnnotations = round218;round240;round280;rectangle240;touch;touch218;touch240;touch260
+fenix6s.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fenix6spro.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fenix6xpro.excludeAnnotations = round218;round240;round260;rectangle240;touch;touch218;touch240;touch260
+fr245.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fr245m.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fr645m.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fr745.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+fr945.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+legacyherocaptainmarvel.excludeAnnotations = round240;round260;round280;rectangle240;touch240;touch260;buttons
+legacyherofirstavenger.excludeAnnotations = round218;round240;round280;rectangle240;touch218;touch240;buttons
+legacysagadarthvader.excludeAnnotations = round218;round240;round280;rectangle240;touch218;touch240;buttons
+marqadventurer.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqathlete.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqaviator.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqcaptain.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqcommander.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqdriver.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqexpedition.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+marqgolfer.excludeAnnotations = round218;round260;round280;rectangle240;touch;touch218;touch240;touch260
+venusq.excludeAnnotations = round218;round240;round260;round280;touch218;touch260;buttons
+venusqm.excludeAnnotations = round218;round240;round260;round280;touch218;touch260;buttons
+vivoactive4.excludeAnnotations = round218;round240;round280;rectangle240;touch218;touch240;buttons
+vivoactive4s.excludeAnnotations = round240;round260;round280;rectangle240;touch240;touch260;buttons
+
+
+
+
+
+
+
+
+
+
